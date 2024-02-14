@@ -352,7 +352,15 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"E:/Unity/Editors/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"E:/Unity/Editors/2022.3.16f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/Music Manager.cs"
+"Assets/Scripts/Bosses/Boss.cs"
+"Assets/Scripts/Bosses/CombatBoss.cs"
+"Assets/Scripts/Events/SpookyEvent.cs"
+"Assets/Scripts/Events/WorldEvent.cs"
+"Assets/Scripts/Managers/DialougeManager.cs"
+"Assets/Scripts/Managers/MusicManager.cs"
+"Assets/Scripts/Managers/SoulManager.cs"
+"Assets/Scripts/Minigames/Minigame.cs"
+"Assets/Scripts/Player.cs"
 -langversion:9.0
 
 /deterministic
