@@ -7,17 +7,13 @@ Manages soul shards and buffs, should be singleton and persitant between scenes 
 Buff info should be avilable to player but contained here for simplicity
 */
 
-public class SoulManager : MonoBehaviour
+public class SoulManager : Singleton
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    int soulCount = 7;
+    bool speedBuff;
+    bool healthBuff;
+    bool fireRateBuff;
+    bool damageBuff;
+    bool blockBuff;
+    bool ignoreBuff;
 }

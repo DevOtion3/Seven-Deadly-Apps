@@ -7,17 +7,7 @@ Controls the global music and sounds of the scene, should eb a singleton to allo
 Methods for adjusting paramters, creating event instances and other global music functions
 */
 
-public class MusicManager : MonoBehaviour
+public class MusicManager : Singleton
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
