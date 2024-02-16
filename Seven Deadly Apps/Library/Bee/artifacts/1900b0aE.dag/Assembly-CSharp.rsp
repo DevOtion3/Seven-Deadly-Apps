@@ -381,6 +381,7 @@
 "Assets/Scripts/Managers/NotificationManager.cs"
 "Assets/Scripts/Managers/SoulManager.cs"
 "Assets/Scripts/Minigames/Minigame.cs"
+"Assets/Scripts/Misc/LightFlicker.cs"
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/Singleton.cs"
 -langversion:9.0
