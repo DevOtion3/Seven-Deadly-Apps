@@ -362,6 +362,7 @@
 "Assets/Scripts/Events/WorldEvent.cs"
 "Assets/Scripts/Managers/DialougeManager.cs"
 "Assets/Scripts/Managers/MusicManager.cs"
+"Assets/Scripts/Managers/NotificationManager.cs"
 "Assets/Scripts/Managers/SoulManager.cs"
 "Assets/Scripts/Minigames/Minigame.cs"
 "Assets/Scripts/Player.cs"
