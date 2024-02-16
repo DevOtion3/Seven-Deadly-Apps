@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: a567c6134e864b542a887253de167f91
+guid: 46ff1b2e782071b47a18b8374a46a33e
 ModelImporter:
   serializedVersion: 22200
   internalIDToNameTable: []
@@ -7,8 +7,13 @@ ModelImporter:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 9bc1f7ce25a154e44915f7407ac65e02, type: 2}
+      name: Bucket
+    second: {fileID: 2100000, guid: 62a4842e851651249b0822cab2492000, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Popcorn
+    second: {fileID: 2100000, guid: 62a4842e851651249b0822cab2492000, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
@@ -24,11 +29,6 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Walls
     second: {fileID: 2100000, guid: 95eb41545166ebd469c52f02df5766a6, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: theater chair palet
-    second: {fileID: 2100000, guid: 9bc1f7ce25a154e44915f7407ac65e02, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
