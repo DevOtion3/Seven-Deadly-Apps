@@ -22,11 +22,6 @@ public class Player : MonoBehaviour{
 
     public float combatMoveSpeed = 1;
 
-    [Category("Ground Check")]
-    public float groundCheckDistance;
-    public float groundCheckYOffset;
-    public LayerMask groundCheckLayers;
-
     float gravityVelocity;
 
     void Start(){
@@ -44,12 +39,5 @@ public class Player : MonoBehaviour{
         movement *= isCombat ? combatMoveSpeed : moveSpeed;
         movement.y = Mathf.Clamp(characterController.velocity.y + (Physics.gravity.y * Time.deltaTime), Physics.gravity.y * 50, 0);
         characterController.Move(movement * Time.deltaTime);
-        Debug.Log(characterController.velocity);
-    }
-
-    bool IsGrounded(){
-        Vector3 groundCheckPosition = transform.position;
-        groundCheckPosition.y -= groundCheckYOffset;
-        return Physics.OverlapSphere(groundCheckPosition, groundCheckDistance, groundCheckLayers).Length > 0 ? true : false;
     }
 }

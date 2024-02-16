@@ -1058,7 +1058,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 0.1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -1311,8 +1311,8 @@ Light:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1000
   m_Range: 150
-  m_SpotAngle: 179
-  m_InnerSpotAngle: 90
+  m_SpotAngle: 128.98509
+  m_InnerSpotAngle: 34.65376
   m_CookieSize: 10
   m_Shadows:
     m_Type: 0
@@ -1371,7 +1371,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efad0ce9d0d17264ea56e16edeebbd33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  light: {fileID: 1543779793}
+  flickerLight: {fileID: 1543779793}
   maxIntensity: 1000
   minIntensity: 250
   flickerInterval: 1
@@ -1667,6 +1667,77 @@ Animation:
   m_PlayAutomatically: 0
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!1 &1949509203
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1949509206}
+  - component: {fileID: 1949509205}
+  - component: {fileID: 1949509204}
+  m_Layer: 0
+  m_Name: Boss Dialouge Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1949509204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949509203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed53b35a6b8feb641aae22d0b4e34c49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onlyTriggerOnce: 0
+  messages:
+  - target: {fileID: 617265287}
+    messageName: Start Dialouge
+    messageData: 
+--- !u!65 &1949509205
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949509203}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 8
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 40.505104, y: 20.471653, z: 42.632576}
+  m_Center: {x: 3.0347939, y: 4.9979415, z: -20.816288}
+--- !u!4 &1949509206
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1949509203}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 20.87}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1954967073 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 227649125405226312, guid: 46ff1b2e782071b47a18b8374a46a33e, type: 3}
@@ -1957,9 +2028,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4584097280665729153, guid: d05b5efc874639e40971b94226c49891, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 5504317615753812843, guid: d05b5efc874639e40971b94226c49891, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5504317615753812843, guid: d05b5efc874639e40971b94226c49891, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7575426219617921634, guid: d05b5efc874639e40971b94226c49891, type: 3}
       propertyPath: moveSpeed
@@ -1983,3 +2062,4 @@ SceneRoots:
   - {fileID: 133454934}
   - {fileID: 1543779795}
   - {fileID: 2012622355}
+  - {fileID: 1949509206}

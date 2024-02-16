@@ -9,7 +9,7 @@ This class should be a basic all rounder that can be simply setup from the inspe
 */
 
 public class SpookyEvent : MonoBehaviour{
-    void OnCollisionEnter(Collision collision){
+    void OnTriggerEnter(Collider collider){
 
     }
 }

@@ -4,7 +4,7 @@ using Unity.VisualScripting;
 using UnityEngine;
 
 public class LightFlicker : MonoBehaviour{
-    public Light light;
+    public Light flickerLight;
 
     public float maxIntensity;
     public float minIntensity;
@@ -12,9 +12,16 @@ public class LightFlicker : MonoBehaviour{
 
     float nextFlickerTime;
 
+    public void Start(){
+        if(flickerLight == null){
+            flickerLight = GetComponent<Light>();
+        }
+    }
+
     public void Update(){
-        if(Time.time >= nextFlickerTime){
-            light.intensity = Random.Range(minIntensity, maxIntensity);
+        if(flickerLight != null && Time.time >= nextFlickerTime){
+            flickerLight.intensity = Random.Range(minIntensity, maxIntensity);
+            flickerLight.color = Random.ColorHSV(0, 1, 0, 1, 1, 1);
             nextFlickerTime = Time.time + Random.Range(0, flickerInterval);
         }
     }

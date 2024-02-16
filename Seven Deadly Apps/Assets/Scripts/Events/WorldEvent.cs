@@ -7,11 +7,19 @@ Similar to SpookyEvent however this class simply sends a unity message/event to 
 */
 
 public class WorldEvent : MonoBehaviour{
+    public bool onlyTriggerOnce;
     public WorldEventData[] messages;
 
-    void OnCollisionEnter(Collision collision){
-        foreach(WorldEventData eventData in messages){
-            eventData.target.SendMessage(eventData.messageName, eventData.messageData);
+    bool hasBeenTriggered;
+
+    void OnTriggerEnter(Collider collider){
+        if(!hasBeenTriggered && onlyTriggerOnce || !onlyTriggerOnce){
+            Debug.Log("Triggered");
+            foreach(WorldEventData eventData in messages){
+                eventData.target.SendMessage(eventData.messageName, eventData.messageData);
+            }
+
+            hasBeenTriggered = true;            
         }
     }
     
