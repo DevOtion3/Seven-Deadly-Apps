@@ -158,5 +158,5 @@ MonoBehaviour:
   controls: {fileID: -944628639613478452, guid: c5f9261cc8c8acc45825c1a6ee3fbd7e, type: 3}
   characterController: {fileID: 6938978861030695870}
   isCombat: 0
-  moveSpeed: 1
+  moveSpeed: 0.005
   combatMoveSpeed: 1

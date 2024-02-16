@@ -11,12 +11,13 @@ public class WorldEvent : MonoBehaviour{
 
     void OnCollisionEnter(Collision collision){
         foreach(WorldEventData eventData in messages){
-            eventData.target.SendMessage(eventData.message);
+            eventData.target.SendMessage(eventData.messageName, eventData.messageData);
         }
     }
     
     [System.Serializable] public class WorldEventData{
         public GameObject target;
-        public string message;
+        public string messageName;
+        public string messageData;
     }
 }
