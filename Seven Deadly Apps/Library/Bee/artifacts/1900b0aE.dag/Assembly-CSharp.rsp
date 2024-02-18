@@ -391,6 +391,7 @@
 "Assets/Scripts/Player.cs"
 "Assets/Scripts/Singleton.cs"
 "Assets/Scripts/TestScript.cs"
+"Assets/Scripts/Triggers/Trigger.cs"
 -langversion:9.0
 
 /deterministic
