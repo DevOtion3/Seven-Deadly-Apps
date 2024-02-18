@@ -33,7 +33,9 @@ MonoBehaviour:
       nextNodeID: 0
   - nodeID: 2
     dialogueText: We are Daedalus. We are Icarus. The barriers between us have fallen
-      and we have become our own shadows. We can be more if we join...with you
+      and we have become our own shadows. We can be more if we join...with you. We
+      are Daedalus. We are Icarus. The barriers between us have fallen and we have
+      become our own shadows. We can be more if we join...with you.
     voiceLine: {fileID: 0}
     dialogueAction: 0
     lastLine: 1

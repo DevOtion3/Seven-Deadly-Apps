@@ -31,18 +31,21 @@ public class DialogueManager : Singleton
         dialogueText = dialoguePanel.GetComponentInChildren<TMP_Text>();
         buttonContainer = dialoguePanel.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
 
-        DialogueOption emptyOption = new DialogueOption();
-
-        dialogueData = WorldSettings.LevelDialogue;
-        if(dialoguePanel == null ) 
+        if (dialoguePanel == null)
         {
             Debug.LogError("Missing Dialogue Panel!");
         }
+    }
+
+    private void Start()
+    {
+        DialogueOption emptyOption = new DialogueOption();
+        dialogueData = WorldSettings.LevelDialogue;
 
         // very hacky code so designers don't have to add in empty dialogue options themselves
-        foreach(DialogueNode node in dialogueData.dialogueNodes)
+        foreach (DialogueNode node in dialogueData.dialogueNodes)
         {
-            if(node.options.Count == 0)
+            if (node.options.Count == 0)
             {
                 node.options.Add(emptyOption);
             }
