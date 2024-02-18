@@ -9,7 +9,7 @@ public class CameraController : MonoBehaviour
     public float verticalDistance = 10;
     public float moveSpeed = 1;
 
-    void Update(){
+    private void Update(){
         Vector3 targetPosition = followTarget.transform.position;
         targetPosition.y +=  verticalDistance;
 

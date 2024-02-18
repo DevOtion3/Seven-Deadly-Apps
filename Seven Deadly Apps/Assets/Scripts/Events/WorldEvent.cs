@@ -16,7 +16,14 @@ public class WorldEvent : MonoBehaviour{
         if(!hasBeenTriggered && onlyTriggerOnce || !onlyTriggerOnce){
             Debug.Log("Triggered");
             foreach(WorldEventData eventData in messages){
-                eventData.target.SendMessage(eventData.messageName, eventData.messageData);
+                if (messages.Length > 0)
+                {
+                    eventData.target.SendMessage(eventData.messageName, eventData.messageData);
+                }
+                else
+                {
+                    Debug.LogError("Messages are Empty!");
+                }
             }
 
             hasBeenTriggered = true;            
