@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{2c0f6351-19bb-47e4-9719-5a7fcaf9e6be}">
+		<property name="assetPath">
+			<value>lvl 1 Cyper Racing - Rhythm Jam 145 2024-02-17.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>81.103458333333336</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f4b95c48-c3d5-42b4-8980-10a2fc4a7e14}</destination>
+		</relationship>
+	</object>
+</objects>
