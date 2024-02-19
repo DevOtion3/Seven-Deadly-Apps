@@ -29,7 +29,7 @@ public class DialogueManager : Singleton
     private void Awake()
     {
         dialogueText = dialoguePanel.GetComponentInChildren<TMP_Text>();
-        buttonContainer = dialoguePanel.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
+        buttonContainer = GameObject.Find("");
 
         if (dialoguePanel == null)
         {

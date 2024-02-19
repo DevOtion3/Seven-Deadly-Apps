@@ -2108,8 +2108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   onlyTriggerOnce: 0
   messages:
-  - target: {fileID: 617265287}
-    messageName: Start Dialouge
+  - target: {fileID: 0}
+    messageName: 
     messageData: 
 --- !u!65 &1949509205
 BoxCollider:
