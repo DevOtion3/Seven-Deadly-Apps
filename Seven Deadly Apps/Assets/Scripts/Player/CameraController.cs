@@ -3,16 +3,26 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 
-public class CameraController : MonoBehaviour
+public class SmoothCameraFollow : MonoBehaviour
 {
-    public GameObject followTarget;
-    public float verticalDistance = 10;
-    public float moveSpeed = 1;
+    #region Variables
 
-    private void Update(){
-        Vector3 targetPosition = followTarget.transform.position;
-        targetPosition.y +=  verticalDistance;
+    private Vector3 _offset;
+    [SerializeField] private Transform target;
+    [SerializeField] private float smoothTime;
+    private Vector3 _currentVelocity = Vector3.zero;
 
-        transform.position = Vector3.Lerp(transform.position, targetPosition, Time.deltaTime * moveSpeed);
+    #endregion
+
+    #region Unity callbacks
+
+    private void Awake() => _offset = transform.position - target.position;
+
+    private void LateUpdate()
+    {
+        Vector3 targetPosition = target.position + _offset;
+        transform.position = Vector3.SmoothDamp(transform.position, targetPosition, ref _currentVelocity, smoothTime);
     }
+
+    #endregion
 }
