@@ -1,3 +1,4 @@
+using DG.Tweening;
 using UnityEngine;
 
 public class LightFlicker : MonoBehaviour
@@ -27,8 +28,10 @@ public class LightFlicker : MonoBehaviour
     {
         if (flickerLight != null && Time.time >= nextFlickerTime)
         {
-            flickerLight.intensity = Random.Range(minIntensity, maxIntensity);
-            flickerLight.color = flickerColors[Random.Range(0, flickerColors.Length)];
+            DOVirtual.Float(flickerLight.intensity, Random.Range(minIntensity, maxIntensity), 0.25f,
+                value => flickerLight.intensity = value);
+            DOVirtual.Color(flickerLight.color, flickerColors[Random.Range(0, flickerColors.Length)], 0.25f,
+                value => flickerLight.color = value);
             nextFlickerTime = Time.time + Random.Range(0, flickerInterval);
         }
     }
