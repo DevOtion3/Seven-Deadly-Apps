@@ -94,4 +94,6 @@ MonoBehaviour:
     voiceLine: {fileID: 8300000, guid: fd0e260e8ed575b48acd0b6b66634a73, type: 3}
     dialogueAction: 0
     lastLine: 1
-    options: []
+    options:
+    - optionText: 
+      nextNodeID: 0

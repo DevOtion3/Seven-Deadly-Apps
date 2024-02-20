@@ -1,5 +1,8 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class DialogueManager : Singleton
 {
@@ -10,18 +13,22 @@ public class DialogueManager : Singleton
 
     [SerializeField] private GameObject buttonPrefab;
 
+    [SerializeField] private AudioSource dialogueAudioPlayer; // FMOD
+
     private TMP_Text dialogueText;
     private GameObject buttonContainer;
 
     private DialogueNode currentNode;
     private DialogueData dialogueData;
 
-    
     [SerializeField] private GameObject dialoguePanel;
 
     private void Awake()
     {
-      
+        dialogueText = dialoguePanel.GetComponentInChildren<TMP_Text>();
+        buttonContainer = dialoguePanel.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
+
+        dialogueAudioPlayer = dialoguePanel.GetComponent<AudioSource>(); // FMOD
 
         if (dialoguePanel == null)
         {
@@ -40,7 +47,7 @@ public class DialogueManager : Singleton
            if (node.options.Count == 0)
            {
                 node.options.Add(emptyOption);
-            }
+           }
         }
     }
 
@@ -49,6 +56,7 @@ public class DialogueManager : Singleton
         dialoguePanel.SetActive(true);
         SetCurrentNode(startingNodeID);
         DisplayDialogue();
+        Debug.Log("Dialogue has started");
     }
     public void EndDialogue()
     {
@@ -82,9 +90,15 @@ public class DialogueManager : Singleton
 
     private void DisplayDialogue()
     {
+        dialogueAudioPlayer.Stop(); // FMOD
+
         ClearDialogueDisplay();
 
         dialogueText.text = currentNode.dialogueText;
+
+        dialogueAudioPlayer.clip = currentNode.voiceLine; // FMOD
+
+        dialogueAudioPlayer.Play(); // FMOD
 
         for (int i = 0; i < currentNode.options.Count; i++)
         {
@@ -107,6 +121,8 @@ public class DialogueManager : Singleton
                 optionText.text = currentNode.options[i].optionText;
             }
         }
+
+        Debug.Log("UI Has Been Updated");
     }
 
     private void ClearDialogueDisplay()
