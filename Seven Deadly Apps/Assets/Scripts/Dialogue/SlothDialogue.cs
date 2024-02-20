@@ -5,12 +5,11 @@ using UnityEngine;
 public class SlothDialogue : MonoBehaviour
 {
     private DialogueManager DialogueManager;
-
     // Start is called before the first frame update
     void Start()
     {
 
-        DialogueManager.StartDialogue(0);
+        DialogueManager.StartDialogue(1);
     }
 
     // Update is called once per frame

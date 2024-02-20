@@ -21,8 +21,7 @@ public class DialogueManager : Singleton
 
     private void Awake()
     {
-        dialogueText = dialoguePanel.GetComponentInChildren<TMP_Text>();
-        buttonContainer = GameObject.Find("");
+      
 
         if (dialoguePanel == null)
         {
