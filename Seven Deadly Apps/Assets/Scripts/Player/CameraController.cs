@@ -1,6 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class SmoothCameraFollow : MonoBehaviour
@@ -16,7 +13,11 @@ public class SmoothCameraFollow : MonoBehaviour
 
     #region Unity callbacks
 
-    private void Awake() => _offset = transform.position - target.position;
+    private void Awake()
+    {
+        // While the 'this' keyword is not necessary, it does read better at a glance
+        _offset = new Vector3(target.position.x - transform.position.x, this.transform.position.y, target.position.z - transform.position.z);
+    }
 
     private void LateUpdate()
     {

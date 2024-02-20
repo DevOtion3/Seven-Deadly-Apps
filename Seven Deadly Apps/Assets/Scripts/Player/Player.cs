@@ -1,67 +1,39 @@
-using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
-using Unity.VisualScripting;
-using UnityEditor.ShaderGraph.Internal;
-using UnityEngine.InputSystem;
 using UnityEngine;
 
 public class Player : MonoBehaviour
 {
-    public float walkSpeed = 2f;
-    public float runSpeed = 3f;
+    [SerializeField] private float walkSpeed = 2f;
+    [SerializeField] private float runSpeed = 3f;
 
     private Animator animator;
-    private bool isWalking = false;
-    private bool isRunning = false;
-    private bool isIdle = true;
+    private CharacterController characterController;
 
-    private void Start()
+    private void Awake()
     {
         animator = GetComponent<Animator>();
+        characterController = GetComponent<CharacterController>();
     }
 
     private void Update()
     {
-        // Get input for movement
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
-
-        // Calculate movement direction based on input
         Vector3 moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized;
+        bool isMoving = moveDirection.magnitude > 0.1f;
+        bool isRunning = Input.GetKey(KeyCode.LeftShift);
 
-        // Determine if the player is moving
-        bool isMoving = moveDirection.magnitude > 0;
-
-        // Set movement animation parameters
-        animator.SetBool("isWalking", isWalking);
-        animator.SetBool("isRunning", isRunning);
-        animator.SetBool("isIdle", isIdle);
-
-        // Check if the player is running
-        if (Input.GetKey(KeyCode.LeftShift) && isMoving)
+        if (isMoving)
         {
-            isWalking = false;
-            isRunning = true;
-            isIdle = false;
-        }
-        // Check if the player is walking
-        else if (isMoving)
-        {
-            isWalking = true;
-            isRunning = false;
-            isIdle = false;
-        }
-        // If the player is not moving, idle animation
-        else
-        {
-            isWalking = false;
-            isRunning = false;
-            isIdle = true;
+            float targetAngle = Mathf.Atan2(moveDirection.x, moveDirection.z) * Mathf.Rad2Deg;
+            transform.rotation = Quaternion.Euler(0f, targetAngle, 0f);
         }
 
-        // Move the player
-        float moveSpeed = isRunning ? runSpeed : walkSpeed;
-        transform.Translate(moveDirection * moveSpeed * Time.deltaTime, Space.World);
+        //SO MUCH BETTER THAN 30 IF/ELSE STATEMENTS
+        float moveSpeed = isMoving ? (isRunning ? runSpeed : walkSpeed) : 0f;
+
+        animator.SetFloat("MoveSpeed", moveSpeed);
+
+        characterController.Move(moveDirection * moveSpeed * Time.deltaTime);
+
     }
 }

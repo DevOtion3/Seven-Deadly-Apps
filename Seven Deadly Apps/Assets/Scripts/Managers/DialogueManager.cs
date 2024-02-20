@@ -1,12 +1,5 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
 using TMPro;
-using System.Linq;
-using JetBrains.Annotations;
-using UnityEngine.Events;
+using UnityEngine;
 
 public class DialogueManager : Singleton
 {
@@ -115,10 +108,6 @@ public class DialogueManager : Singleton
                 optionText.text = currentNode.options[i].optionText;
             }
         }
-    }
-
-    private void CreateLastLineButton()
-    {
     }
 
     private void ClearDialogueDisplay()
