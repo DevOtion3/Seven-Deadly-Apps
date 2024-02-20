@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.06759518, g: 0.07206548, b: 0.08054117, a: 1}
+  m_IndirectSpecularColor: {r: 0.06759513, g: 0.072065435, b: 0.08054111, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1232,7 +1232,7 @@ Transform:
   m_GameObject: {fileID: 617265287}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1.45, y: 0, z: 7.42}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1253,11 +1253,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: 502066898
-      Data2: 1260166536
-      Data3: 2146979736
-      Data4: -795115048
-    Path: event:/MUSIC/2d TEST AUDIO
+      Data1: -152842095
+      Data2: 1204288058
+      Data3: 2135509173
+      Data4: 2121340570
+    Path: event:/AMBIENCE/Cinema
   Event: 
   PlayEvent: 1
   StopEvent: 0
@@ -1266,9 +1266,9 @@ MonoBehaviour:
   Preload: 0
   AllowNonRigidbodyDoppler: 1
   Params: []
-  OverrideAttenuation: 0
+  OverrideAttenuation: 1
   OverrideMinDistance: 1
-  OverrideMaxDistance: 20
+  OverrideMaxDistance: 500
 --- !u!1 &643739205
 GameObject:
   m_ObjectHideFlags: 0
