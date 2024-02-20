@@ -35,10 +35,10 @@ public class DialogueManager : Singleton
         dialogueData = WorldSettings.LevelDialogue;
 
         // very hacky code so designers don't have to add in empty dialogue options themselves
-        foreach (DialogueNode node in dialogueData.dialogueNodes)
-        {
-            if (node.options.Count == 0)
-            {
+       foreach (DialogueNode node in dialogueData.dialogueNodes)
+      {
+           if (node.options.Count == 0)
+           {
                 node.options.Add(emptyOption);
             }
         }

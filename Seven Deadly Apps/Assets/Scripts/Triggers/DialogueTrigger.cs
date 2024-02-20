@@ -12,7 +12,7 @@ public class DialogueTrigger : MonoBehaviour
     private void Awake()
     {
         collider = GetComponent<BoxCollider>();
-        dialogueManager = GameObject.Find("Manager").GetComponent<DialogueManager>();
+        dialogueManager = GameObject.Find("Boss Dialogue Trigger").GetComponent<DialogueManager>();
     }
 
     private void OnTriggerEnter(Collider other)
