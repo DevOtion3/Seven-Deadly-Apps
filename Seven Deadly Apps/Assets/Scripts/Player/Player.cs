@@ -3,71 +3,65 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using Unity.VisualScripting;
 using UnityEditor.ShaderGraph.Internal;
-using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine;
 
-/*
-Moves player character in game world, may neeed seprate class to control wheter play should move or not, we'll see
-*/
+public class Player : MonoBehaviour
+{
+    public float walkSpeed = 2f;
+    public float runSpeed = 3f;
 
-public class Player : MonoBehaviour{
+    private Animator animator;
+    private bool isWalking = false;
+    private bool isRunning = false;
+    private bool isIdle = true;
 
-    #region Consts
-    private const int GRAVITY_MULTIPLIER = 50;
-    #endregion
-
-    public InputActionAsset controls;
-    Dictionary<string, InputAction> inputs;
-
-    private CharacterController characterController;
-
-    public bool isCombat;
-
-    public float moveSpeed = 1;
-
-    public float combatMoveSpeed = 1;
-
-    float gravityVelocity;
-
-    [SerializeField] private DialogueManager dialogueManager;
-
-    private void Awake()
+    private void Start()
     {
-        //This is bad!
-        //dialogueManager = GameObject.Find("Manager").GetComponent<DialogueManager>();
-
-        characterController = GetComponent<CharacterController>();
+        animator = GetComponent<Animator>();
     }
 
-    private void Start(){
-        inputs = new Dictionary<string, InputAction>();
-        InputActionMap inputMap = controls.FindActionMap("Player");
-        inputMap.Enable();
-        inputs.Add("Movement", inputMap.FindAction("Movement"));
-    }
-
-    private void Update(){
-
-        PlayerInput();
-        Debugging();
-    }
-
-    private void PlayerInput()
+    private void Update()
     {
-        Vector2 input = inputs["Movement"].ReadValue<Vector2>();
-        Vector3 movement = new Vector3();
-        movement += transform.forward * input.y;
-        movement += transform.right * input.x;
-        movement *= isCombat ? combatMoveSpeed : moveSpeed;
-        movement.y = Mathf.Clamp(characterController.velocity.y + (Physics.gravity.y * Time.deltaTime), Physics.gravity.y * GRAVITY_MULTIPLIER, 0);
-        characterController.Move(movement * Time.deltaTime);
-    }
+        // Get input for movement
+        float horizontalInput = Input.GetAxis("Horizontal");
+        float verticalInput = Input.GetAxis("Vertical");
 
-   private void Debugging()
-    {
-        if(Input.GetKeyDown(KeyCode.J))
+        // Calculate movement direction based on input
+        Vector3 moveDirection = new Vector3(horizontalInput, 0f, verticalInput).normalized;
+
+        // Determine if the player is moving
+        bool isMoving = moveDirection.magnitude > 0;
+
+        // Set movement animation parameters
+        animator.SetBool("isWalking", isWalking);
+        animator.SetBool("isRunning", isRunning);
+        animator.SetBool("isIdle", isIdle);
+
+        // Check if the player is running
+        if (Input.GetKey(KeyCode.LeftShift) && isMoving)
         {
-            dialogueManager.StartDialogue(0);
+            isWalking = false;
+            isRunning = true;
+            isIdle = false;
         }
+        // Check if the player is walking
+        else if (isMoving)
+        {
+            isWalking = true;
+            isRunning = false;
+            isIdle = false;
+        }
+        // If the player is not moving, idle animation
+        else
+        {
+            isWalking = false;
+            isRunning = false;
+            isIdle = true;
+        }
+
+        // Move the player
+        float moveSpeed = isRunning ? runSpeed : walkSpeed;
+        transform.Translate(moveDirection * moveSpeed * Time.deltaTime, Space.World);
     }
 }
