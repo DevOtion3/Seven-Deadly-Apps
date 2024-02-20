@@ -6,7 +6,7 @@
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 512 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7ff6ddc86008 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7f7dd699aa08 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,7 +18,131 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
-[LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5248
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x31603c93c
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1da177c24
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1da177ce2
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1da177d15
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1da177db4
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7f7dd29041c8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Slap_07', format=5, channels=2, frequency=48000, lengthbytes=4928, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.698770.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5248
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x31603c93c
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1da177c24
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1da177ce2
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1da177d15
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1da177db4
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7f7dd29041c8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Slap_04', format=5, channels=2, frequency=48000, lengthbytes=4672, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=1.000000.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5248
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x31603c93c
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1da177c24
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1da177ce2
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1da177d15
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1da177db4
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7f7dd29041c8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Slap_06', format=5, channels=2, frequency=48000, lengthbytes=4832, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.563240.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5248
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x31603c93c
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1da177c24
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1da177ce2
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1da177d15
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1da177db4
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7f7dd29041c8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Slap_08', format=5, channels=2, frequency=48000, lengthbytes=4032, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.332114.
+[LOG] SystemI::createSoundInternal             : Create name='', mode=0x02000202
+[LOG] SystemI::createSoundInternal             : exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             : exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 5248
+[LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 0x31603c93c
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             : exinfo->useropen           = 0x1da177c24
+[LOG] SystemI::createSoundInternal             : exinfo->userclose          = 0x1da177ce2
+[LOG] SystemI::createSoundInternal             : exinfo->userread           = 0x1da177d15
+[LOG] SystemI::createSoundInternal             : exinfo->userseek           = 0x1da177db4
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 0x7f7dd29041c8
+[LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
+[LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
+[LOG] SystemI::createSoundInternal             : Sample 0/1: name='Slap_05', format=5, channels=2, frequency=48000, lengthbytes=4320, lengthpcm=24000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.439738.
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 114688, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f7dd2934708, queue head = 0x7f7e102351f8, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f7dd2934708
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 5248
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f7dd29c0490
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] Thread::initThread                       :     Init FMOD file thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFC, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f7dd2934708
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f7dd2934708)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f7da2a87f08)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f7da2ab34a8)
+[LOG] SoundI::release                          :  (0x7f7e2172e488)
+[LOG] SoundI::release                          :     Slap_04 (0x7f7e128e2cd8)
+[LOG] SoundI::release                          :  (0x7f7dd295f2e8)
+[LOG] SoundI::release                          :     Slap_05 (0x7f7dd29765d8)
+[LOG] SoundI::release                          :  (0x7f7e217b2d38)
+[LOG] SoundI::release                          :     Slap_06 (0x7f7e1023e2e8)
+[LOG] SoundI::release                          :  (0x7f7e217e0518)
+[LOG] SoundI::release                          :     Slap_07 (0x7f7e06c12868)
+[LOG] SoundI::release                          :  (0x7f7dd29a3168)
+[LOG] SoundI::release                          :     Slap_08 (0x7f7dd2922a38)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] ProfileClient::markForDead               : Closing client connection
+[ERR] FMOD_OS_Net_Read                         : read failed with errno 9
+[ERR] ProfileClient::recvThreadLoopFunction    : Recv thread loop returned 43
+[LOG] Thread::callback                         : FMOD profiler thread (recv) finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] Thread::callback                         : FMOD profiler thread (send) finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
+[LOG] SystemI::close                           : Closed.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
@@ -26,3 +150,5 @@
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
 [LOG] SystemI::close                           : Closed.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
