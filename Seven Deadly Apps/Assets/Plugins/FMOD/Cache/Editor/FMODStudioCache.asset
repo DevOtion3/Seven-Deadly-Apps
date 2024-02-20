@@ -69,7 +69,11 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/MUSIC.bank
   Name: MUSIC
   StudioPath: bank:/MUSIC
+<<<<<<< HEAD
   lastModified: 638439356954833095
+=======
+  lastModified: 638438756151212133
+>>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
   FileSizes:
   - Name: Desktop
     Value: 1149696
@@ -89,7 +93,11 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
+<<<<<<< HEAD
   lastModified: 638440629399290430
+=======
+  lastModified: 638440155964519363
+>>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
   FileSizes:
   - Name: Desktop
     Value: 1214
@@ -109,7 +117,11 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/PLAYER.bank
   Name: PLAYER
   StudioPath: bank:/PLAYER
+<<<<<<< HEAD
   lastModified: 638440349384953577
+=======
+  lastModified: 638440155964529381
+>>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
   FileSizes:
   - Name: Desktop
     Value: 41856
@@ -156,7 +168,11 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
+<<<<<<< HEAD
   lastModified: 638440608407076856
+=======
+  lastModified: 638440155964519363
+>>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
   FileSizes:
   - Name: Desktop
     Value: 1194
@@ -190,7 +206,11 @@ MonoBehaviour:
   - {fileID: -2154509931637849172}
   StringsBanks:
   - {fileID: -6435683940025059295}
+<<<<<<< HEAD
   cacheTime: 638440629399290430
+=======
+  cacheTime: 638440155964529381
+>>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
   cacheVersion: 131616
 --- !u!114 &1962587607119618280
 MonoBehaviour:
@@ -261,7 +281,11 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank
   Name: AMBIENCE
   StudioPath: bank:/AMBIENCE
+<<<<<<< HEAD
   lastModified: 638440629399288328
+=======
+  lastModified: 638440155964509377
+>>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
   FileSizes:
   - Name: Desktop
     Value: 388864
