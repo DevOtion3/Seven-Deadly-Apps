@@ -1,132 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9203065635427738435
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MUSIC/2d TEST AUDIO
-  m_EditorClassIdentifier: 
-  Path: event:/MUSIC/2d TEST AUDIO
-  Guid:
-    Data1: 502066898
-    Data2: 1260166536
-    Data3: 2146979736
-    Data4: -795115048
-  Banks:
-  - {fileID: -7265941669150715985}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 81103
---- !u!114 &-8938301880085963441
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/MUSIC/3d TEST AUDIO
-  m_EditorClassIdentifier: 
-  Path: event:/MUSIC/3d TEST AUDIO
-  Guid:
-    Data1: -337480957
-    Data2: 1087252490
-    Data3: 4589727
-    Data4: 2075935644
-  Banks:
-  - {fileID: -7265941669150715985}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 81103
---- !u!114 &-7265941669150715985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/MUSIC.bank
-  m_EditorClassIdentifier: 
-  Path: Fmod/Seven Deadly Apps/Build/Desktop/MUSIC.bank
-  Name: MUSIC
-  StudioPath: bank:/MUSIC
-<<<<<<< HEAD
-  lastModified: 638439356954833095
-=======
-  lastModified: 638438756151212133
->>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
-  FileSizes:
-  - Name: Desktop
-    Value: 1149696
-  Exists: 1
---- !u!114 &-6435683940025059295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-<<<<<<< HEAD
-  lastModified: 638440629399290430
-=======
-  lastModified: 638440155964519363
->>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
-  FileSizes:
-  - Name: Desktop
-    Value: 1214
-  Exists: 1
---- !u!114 &-4987016485657641946
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/PLAYER.bank
-  m_EditorClassIdentifier: 
-  Path: Fmod/Seven Deadly Apps/Build/Desktop/PLAYER.bank
-  Name: PLAYER
-  StudioPath: bank:/PLAYER
-<<<<<<< HEAD
-  lastModified: 638440349384953577
-=======
-  lastModified: 638440155964529381
->>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
-  FileSizes:
-  - Name: Desktop
-    Value: 41856
-  Exists: 1
---- !u!114 &-4894097919166474650
+--- !u!114 &-8658145481691715985
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -145,7 +19,7 @@ MonoBehaviour:
     Data3: 2004958143
     Data4: 1299042817
   Banks:
-  - {fileID: -4987016485657641946}
+  - {fileID: 2879348568615839540}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -153,7 +27,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-2154509931637849172
+--- !u!114 &-5560884842883493136
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -168,51 +42,12 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-<<<<<<< HEAD
-  lastModified: 638440608407076856
-=======
-  lastModified: 638440155964519363
->>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
+  lastModified: 638440449768410014
   FileSizes:
   - Name: Desktop
     Value: 1194
   Exists: 1
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -6435683940025059295}
-  - {fileID: -2154509931637849172}
-  - {fileID: -7265941669150715985}
-  - {fileID: 7298950728865022039}
-  - {fileID: -4987016485657641946}
-  EditorEvents:
-  - {fileID: -8938301880085963441}
-  - {fileID: -9203065635427738435}
-  - {fileID: 1962587607119618280}
-  - {fileID: 7293200039455021909}
-  - {fileID: -4894097919166474650}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: -2154509931637849172}
-  StringsBanks:
-  - {fileID: -6435683940025059295}
-<<<<<<< HEAD
-  cacheTime: 638440629399290430
-=======
-  cacheTime: 638440155964529381
->>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
-  cacheVersion: 131616
---- !u!114 &1962587607119618280
+--- !u!114 &-2262845017711364406
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -231,7 +66,7 @@ MonoBehaviour:
     Data3: 2135509173
     Data4: 2121340570
   Banks:
-  - {fileID: 7298950728865022039}
+  - {fileID: 6823019090220659379}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -239,7 +74,125 @@ MonoBehaviour:
   MinDistance: 59.5
   MaxDistance: 7400
   Length: 32000
---- !u!114 &7293200039455021909
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: 8393001357970107537}
+  - {fileID: 6823019090220659379}
+  - {fileID: -5560884842883493136}
+  - {fileID: 4549230351038686289}
+  - {fileID: 2879348568615839540}
+  EditorEvents:
+  - {fileID: -2262845017711364406}
+  - {fileID: 1292454405657618237}
+  - {fileID: 7454699711775091263}
+  - {fileID: 7094925878286332688}
+  - {fileID: -8658145481691715985}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: -5560884842883493136}
+  StringsBanks:
+  - {fileID: 8393001357970107537}
+  cacheTime: 638440449768420016
+  cacheVersion: 131616
+--- !u!114 &1292454405657618237
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/3d TEST AUDIO
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/3d TEST AUDIO
+  Guid:
+    Data1: -337480957
+    Data2: 1087252490
+    Data3: 4589727
+    Data4: 2075935644
+  Banks:
+  - {fileID: 4549230351038686289}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 81103
+--- !u!114 &2879348568615839540
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/PLAYER.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod/Seven Deadly Apps/Build/Desktop/PLAYER.bank
+  Name: PLAYER
+  StudioPath: bank:/PLAYER
+  lastModified: 638440449768420016
+  FileSizes:
+  - Name: Desktop
+    Value: 41856
+  Exists: 1
+--- !u!114 &4549230351038686289
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MUSIC.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod/Seven Deadly Apps/Build/Desktop/MUSIC.bank
+  Name: MUSIC
+  StudioPath: bank:/MUSIC
+  lastModified: 638440449768410014
+  FileSizes:
+  - Name: Desktop
+    Value: 1149696
+  Exists: 1
+--- !u!114 &6823019090220659379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/AMBIENCE.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank
+  Name: AMBIENCE
+  StudioPath: bank:/AMBIENCE
+  lastModified: 638440449768370003
+  FileSizes:
+  - Name: Desktop
+    Value: 388864
+  Exists: 1
+--- !u!114 &7094925878286332688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -258,7 +211,7 @@ MonoBehaviour:
     Data3: -749915478
     Data4: -1762079375
   Banks:
-  - {fileID: -4987016485657641946}
+  - {fileID: 2879348568615839540}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -266,7 +219,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &7298950728865022039
+--- !u!114 &7454699711775091263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC/2d TEST AUDIO
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC/2d TEST AUDIO
+  Guid:
+    Data1: 502066898
+    Data2: 1260166536
+    Data3: 2146979736
+    Data4: -795115048
+  Banks:
+  - {fileID: 4549230351038686289}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 81103
+--- !u!114 &8393001357970107537
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -276,17 +256,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/AMBIENCE.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank
-  Name: AMBIENCE
-  StudioPath: bank:/AMBIENCE
-<<<<<<< HEAD
-  lastModified: 638440629399288328
-=======
-  lastModified: 638440155964509377
->>>>>>> 0a06badc3f7be540963218d1f99c0f3b200e8392
+  Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638440449768410014
   FileSizes:
   - Name: Desktop
-    Value: 388864
+    Value: 1214
   Exists: 1
