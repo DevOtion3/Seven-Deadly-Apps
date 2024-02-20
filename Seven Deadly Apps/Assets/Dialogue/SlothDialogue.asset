@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c7a43cd57a6ae7d43985870f6196df8c, type: 3}
+  m_Name: SlothDialogue
+  m_EditorClassIdentifier: 
+  dialogueNodes:
+  - nodeID: 0
+    dialogueText: Hello there my good friend!
+    voiceLine: {fileID: 0}
+    dialogueAction: 0
+    lastLine: 0
+    options:
+    - optionText: Hi!
+      nextNodeID: 1
+    - optionText: Who are you?
+      nextNodeID: 2
+  - nodeID: 1
+    dialogueText: Bye Now.
+    voiceLine: {fileID: 0}
+    dialogueAction: 0
+    lastLine: 1
+    options:
+    - optionText: 
+      nextNodeID: 0
+  - nodeID: 2
+    dialogueText: We are Daedalus. We are Icarus. The barriers between us have fallen
+      and we have become our own shadows. We can be more if we join...with you. We
+      are Daedalus. We are Icarus. The barriers between us have fallen and we have
+      become our own shadows. We can be more if we join...with you.
+    voiceLine: {fileID: 0}
+    dialogueAction: 0
+    lastLine: 1
+    options:
+    - optionText: 
+      nextNodeID: 0

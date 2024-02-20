@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="DAWProject" id="{df4fc486-fd7c-4c5e-a9a3-14ace46f08b6}">
+		<property name="assetPath">
+			<value>Seven Deadly Apps.RPP.link/</value>
+		</property>
+		<property name="dawProjectPath">
+			<value>/Users/ryanbaldwin/Documents/01_PROJECTS/01_DAW Projects/2024/GAME JAMS/Seven Deadly Apps/Seven Deadly Apps.RPP</value>
+		</property>
+		<property name="renderedAssetsPath">
+			<value>REDNERS</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{f4b95c48-c3d5-42b4-8980-10a2fc4a7e14}</destination>
+		</relationship>
+	</object>
+</objects>
