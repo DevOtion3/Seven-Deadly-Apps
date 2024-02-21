@@ -8,7 +8,8 @@ using UnityEngine.UI;
 Used to manage the ui for the "notifications"
 */
 
-public class NotificationManager : Singleton{
+public class NotificationManager : Singleton<NotificationManager>
+{
     public TextMeshPro textBox;
     public Animation animator;
 

@@ -31,7 +31,7 @@ MonoBehaviour:
     dialogueText: "You\u2019re finally awake! I thought you\u2019d never come through.
       Not that I\u2019m against sleeping. Sleeping\u2019s great, don\u2019t you think?"
     dialogueAction: 0
-    lastLine: 1
+    lastLine: 0
     options:
     - optionText: I agree! Sleeping is great (sleep a bit more)
       nextNodeID: 2
@@ -40,7 +40,7 @@ MonoBehaviour:
   - nodeID: 2
     dialogueText: One Hour Later
     dialogueAction: 0
-    lastLine: 1
+    lastLine: 0
     options:
     - optionText: Next
       nextNodeID: 4
@@ -92,4 +92,6 @@ MonoBehaviour:
       time\u2026 You always ruin everything\u2026"
     dialogueAction: 0
     lastLine: 1
-    options: []
+    options:
+    - optionText: 
+      nextNodeID: 0

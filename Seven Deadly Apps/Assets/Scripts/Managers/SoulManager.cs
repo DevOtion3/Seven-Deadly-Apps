@@ -7,7 +7,7 @@ Manages soul shards and buffs, should be singleton and persitant between scenes 
 Buff info should be avilable to player but contained here for simplicity
 */
 
-public class SoulManager : Singleton
+public class SoulManager : Singleton<SoulManager>
 {
     int soulCount = 7;
     bool speedBuff;
