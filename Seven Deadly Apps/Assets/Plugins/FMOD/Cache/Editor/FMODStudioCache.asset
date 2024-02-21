@@ -43,7 +43,7 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638441824379443438
+  lastModified: 638441249971511564
   FileSizes:
   - Name: Desktop
     Value: 1340
@@ -117,18 +117,20 @@ MonoBehaviour:
   - {fileID: -5560884842883493136}
   - {fileID: 4549230351038686289}
   - {fileID: 2879348568615839540}
+  - {fileID: 1948559986737610824}
   EditorEvents:
   - {fileID: -2262845017711364406}
   - {fileID: 1292454405657618237}
   - {fileID: 7454699711775091263}
   - {fileID: 7094925878286332688}
   - {fileID: -8658145481691715985}
+  - {fileID: 5012063885345343802}
   EditorParameters: []
   MasterBanks:
   - {fileID: -5560884842883493136}
   StringsBanks:
   - {fileID: 8393001357970107537}
-  cacheTime: 638441860579783955
+  cacheTime: 638441297437041681
   cacheVersion: 131616
 --- !u!114 &1292454405657618237
 MonoBehaviour:
@@ -157,6 +159,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 81103
+--- !u!114 &1948559986737610824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Dialogue.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod/Seven Deadly Apps/Build/Desktop/Dialogue.bank
+  Name: Dialogue
+  StudioPath: bank:/Dialogue
+  lastModified: 638441297437031681
+  FileSizes:
+  - Name: Desktop
+    Value: 455744
+  Exists: 1
 --- !u!114 &2879348568615839540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,7 +194,7 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/PLAYER.bank
   Name: PLAYER
   StudioPath: bank:/PLAYER
-  lastModified: 638441860579783955
+  lastModified: 638441249971588286
   FileSizes:
   - Name: Desktop
     Value: 37376
@@ -192,11 +214,38 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/MUSIC.bank
   Name: MUSIC
   StudioPath: bank:/MUSIC
-  lastModified: 638439356954833095
+  lastModified: 638440449768410014
   FileSizes:
   - Name: Desktop
     Value: 1149696
   Exists: 1
+--- !u!114 &5012063885345343802
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Dialogue TEST METHOD 1/Diag 1
+  m_EditorClassIdentifier: 
+  Path: event:/Dialogue TEST METHOD 1/Diag 1
+  Guid:
+    Data1: -594822272
+    Data2: 1302121129
+    Data3: -861606496
+    Data4: -1128547937
+  Banks:
+  - {fileID: 1948559986737610824}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14750
 --- !u!114 &6823019090220659379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -212,7 +261,7 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank
   Name: AMBIENCE
   StudioPath: bank:/AMBIENCE
-  lastModified: 638441860579448212
+  lastModified: 638440556122750975
   FileSizes:
   - Name: Desktop
     Value: 391392
@@ -286,8 +335,8 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638441824379450314
+  lastModified: 638441297437041681
   FileSizes:
   - Name: Desktop
-    Value: 1302
+    Value: 1402
   Exists: 1

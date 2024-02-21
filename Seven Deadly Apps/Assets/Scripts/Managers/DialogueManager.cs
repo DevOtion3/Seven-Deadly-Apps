@@ -83,7 +83,7 @@ public class DialogueManager : Singleton
         ClearDialogueDisplay();
 
         dialogueText.text = currentNode.dialogueText;
-
+        
         var dialogueAudio = WorldSettings.LevelDialogue.dialogueAudio;
         RuntimeManager.PlayOneShot(dialogueAudio);
 

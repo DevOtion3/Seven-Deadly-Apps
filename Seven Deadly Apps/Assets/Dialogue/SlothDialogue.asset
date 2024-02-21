@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueAudio:
     Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
+      Data1: -594822272
+      Data2: 1302121129
+      Data3: -861606496
+      Data4: -1128547937
+    Path: event:/Dialogue TEST METHOD 1/Diag 1
   dialogueNodes:
   - nodeID: 0
     dialogueText: An UNKNOWN FAMILIAR VOICE seems to talk directly in your brain
