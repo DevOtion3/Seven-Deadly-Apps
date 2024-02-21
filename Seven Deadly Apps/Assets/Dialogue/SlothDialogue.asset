@@ -43,14 +43,14 @@ MonoBehaviour:
     lastLine: 1
     options:
     - optionText: Next
-      nextNodeID: 3
+      nextNodeID: 4
   - nodeID: 3
     dialogueText: One Hour Later
     dialogueAction: 0
-    lastLine: 1
+    lastLine: 0
     options:
     - optionText: Next
-      nextNodeID: 4
+      nextNodeID: 6
   - nodeID: 4
     dialogueText: "Now that you\u2019re rested... What about watching a movie with
       me"
@@ -66,7 +66,7 @@ MonoBehaviour:
     options:
     - optionText: "Sure , I love movies! It\u2019s not like I have something more
         important to do"
-      nextNodeID: 6
+      nextNodeID: 3
     - optionText: "Sorry, but no. I don\u2019t know where I am and I need to move
         now!"
       nextNodeID: 10
@@ -88,10 +88,8 @@ MonoBehaviour:
     - optionText: "Come on, I\u2019ve had enough. I need to go, now!"
       nextNodeID: 10
   - nodeID: 10
-    dialogueText: "Why do you always have to go, man?! We were having a good time\u2026
-      You always ruin everything\u2026"
+    dialogueText: "Why do you always have to go, man?! We were having such a good
+      time\u2026 You always ruin everything\u2026"
     dialogueAction: 0
-    lastLine: 0
-    options:
-    - optionText: 
-      nextNodeID: 0
+    lastLine: 1
+    options: []
