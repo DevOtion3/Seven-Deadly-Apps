@@ -21,9 +21,10 @@ MonoBehaviour:
   Banks:
   - {fileID: 2879348568615839540}
   IsStream: 0
-  Is3D: 1
+  Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: -1261621352479424084}
   MinDistance: 1
   MaxDistance: 20
   Length: 0
@@ -42,7 +43,7 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638441149142572519
+  lastModified: 638441824379443438
   FileSizes:
   - Name: Desktop
     Value: 1340
@@ -74,6 +75,30 @@ MonoBehaviour:
   MinDistance: 0.5
   MaxDistance: 150
   Length: 32000
+--- !u!114 &-1261621352479424084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Walk Player/Speed
+  m_EditorClassIdentifier: 
+  Name: Speed
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 20738854
+    data2: 1041943068
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -103,7 +128,7 @@ MonoBehaviour:
   - {fileID: -5560884842883493136}
   StringsBanks:
   - {fileID: 8393001357970107537}
-  cacheTime: 638441163842099067
+  cacheTime: 638441824379618371
   cacheVersion: 131616
 --- !u!114 &1292454405657618237
 MonoBehaviour:
@@ -147,7 +172,7 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/PLAYER.bank
   Name: PLAYER
   StudioPath: bank:/PLAYER
-  lastModified: 638441163842099067
+  lastModified: 638441824379618371
   FileSizes:
   - Name: Desktop
     Value: 37376
@@ -187,7 +212,7 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank
   Name: AMBIENCE
   StudioPath: bank:/AMBIENCE
-  lastModified: 638441134726090514
+  lastModified: 638441820139945199
   FileSizes:
   - Name: Desktop
     Value: 391392
@@ -261,7 +286,7 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638441149142577749
+  lastModified: 638441824379450314
   FileSizes:
   - Name: Desktop
     Value: 1302

@@ -132,7 +132,7 @@
 			<value>5</value>
 		</property>
 		<property name="frequencyA">
-			<value>1908.24695</value>
+			<value>924.054321</value>
 		</property>
 		<property name="frequencyB">
 			<value>301.852356</value>
@@ -141,7 +141,7 @@
 			<value>145</value>
 		</property>
 		<property name="qualityA">
-			<value>0.634002209</value>
+			<value>0.570868909</value>
 		</property>
 		<property name="qualityC">
 			<value>0.699999988</value>
@@ -202,7 +202,7 @@
 			<value>0</value>
 		</property>
 		<property name="value">
-			<value>350</value>
+			<value>86.3623047</value>
 		</property>
 		<property name="curveShape">
 			<value>0.393512249</value>
@@ -213,7 +213,7 @@
 			<value>4.9223163841807906</value>
 		</property>
 		<property name="value">
-			<value>42.9640007</value>
+			<value>61.6183929</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{201177be-3464-463b-9f0d-15cef48503b7}">
@@ -221,7 +221,7 @@
 			<value>0.077683615819209045</value>
 		</property>
 		<property name="value">
-			<value>0.910125613</value>
+			<value>0.184177607</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{733b62f9-9821-49ee-b752-1ca4ec522476}">
@@ -229,7 +229,7 @@
 			<value>4.9646892655367232</value>
 		</property>
 		<property name="value">
-			<value>4.50588703</value>
+			<value>0.657358587</value>
 		</property>
 	</object>
 </objects>
