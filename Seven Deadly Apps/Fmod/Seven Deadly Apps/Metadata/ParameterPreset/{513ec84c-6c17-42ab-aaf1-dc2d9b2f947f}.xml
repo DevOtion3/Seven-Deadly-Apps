@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="ParameterPreset" id="{513ec84c-6c17-42ab-aaf1-dc2d9b2f947f}">
+		<property name="name">
+			<value>Monster Talk become distorted</value>
+		</property>
+		<relationship name="folder">
+			<destination>{db48d3bb-e15b-4e97-8c6c-cf33d13f46ef}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{ab9bdfec-a8df-43eb-b0e3-bd632f3b6a9d}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{ab9bdfec-a8df-43eb-b0e3-bd632f3b6a9d}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
