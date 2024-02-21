@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="EventFolder" id="{f75a195a-cf74-440b-a4b2-dda02fe9b663}">
+	<object class="Bank" id="{d4bde012-4613-46b3-834e-015598a1de15}">
 		<property name="name">
-			<value>Dialogue TEST METHOD 1</value>
+			<value>Dialogue</value>
 		</property>
 		<relationship name="folder">
-			<destination>{68cd81dc-a3b0-4d00-aefd-2f3fdf311eec}</destination>
+			<destination>{bf8965f3-944f-47f9-892e-a13dcbe40dfa}</destination>
 		</relationship>
 	</object>
 </objects>

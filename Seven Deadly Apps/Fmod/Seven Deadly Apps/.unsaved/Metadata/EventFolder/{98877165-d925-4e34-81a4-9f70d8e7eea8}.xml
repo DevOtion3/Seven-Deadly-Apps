@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.02.00">
-	<object class="EventFolder" id="{f75a195a-cf74-440b-a4b2-dda02fe9b663}">
+	<object class="EventFolder" id="{98877165-d925-4e34-81a4-9f70d8e7eea8}">
 		<property name="name">
-			<value>Dialogue TEST METHOD 1</value>
+			<value>Dialogue Test method 2</value>
 		</property>
 		<relationship name="folder">
 			<destination>{68cd81dc-a3b0-4d00-aefd-2f3fdf311eec}</destination>
