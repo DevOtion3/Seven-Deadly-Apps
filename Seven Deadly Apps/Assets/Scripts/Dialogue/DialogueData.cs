@@ -1,9 +1,11 @@
 using System.Collections.Generic;
+using FMODUnity;
 using UnityEngine;
 
 [CreateAssetMenu(fileName="New Dialogue Asset", menuName="Dialogue Asset")]
 public class DialogueData : ScriptableObject
 {
+    [SerializeField] public EventReference dialogueAudio;
     [SerializeField] public List<DialogueNode> dialogueNodes;
 }
 
@@ -21,7 +23,6 @@ public struct DialogueNode
 {
     [SerializeField] public int nodeID;
     [SerializeField] public string dialogueText;
-    [SerializeField] public AudioClip voiceLine;
 
     [Tooltip("None: No Special Behaviour | Execute Code: Will execute any code placed")]
     [SerializeField] public DialogueActions dialogueAction;

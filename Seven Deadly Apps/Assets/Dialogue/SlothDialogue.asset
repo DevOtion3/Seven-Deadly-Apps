@@ -12,10 +12,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a43cd57a6ae7d43985870f6196df8c, type: 3}
   m_Name: SlothDialogue
   m_EditorClassIdentifier: 
+  dialogueAudio:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   dialogueNodes:
   - nodeID: 0
     dialogueText: An UNKNOWN FAMILIAR VOICE seems to talk directly in your brain
-    voiceLine: {fileID: 8300000, guid: 9b979e4ad34dbf94a9b7df5b65f1f27a, type: 3}
     dialogueAction: 0
     lastLine: 0
     options:
@@ -24,7 +30,6 @@ MonoBehaviour:
   - nodeID: 1
     dialogueText: "You\u2019re finally awake! I thought you\u2019d never come through.
       Not that I\u2019m against sleeping. Sleeping\u2019s great, don\u2019t you think?"
-    voiceLine: {fileID: 8300000, guid: 849aceda2e3c0c34a9157b28db6739dd, type: 3}
     dialogueAction: 0
     lastLine: 1
     options:
@@ -34,7 +39,6 @@ MonoBehaviour:
       nextNodeID: 10
   - nodeID: 2
     dialogueText: One Hour Later
-    voiceLine: {fileID: 0}
     dialogueAction: 0
     lastLine: 1
     options:
@@ -42,7 +46,6 @@ MonoBehaviour:
       nextNodeID: 3
   - nodeID: 3
     dialogueText: One Hour Later
-    voiceLine: {fileID: 0}
     dialogueAction: 0
     lastLine: 1
     options:
@@ -51,7 +54,6 @@ MonoBehaviour:
   - nodeID: 4
     dialogueText: "Now that you\u2019re rested... What about watching a movie with
       me"
-    voiceLine: {fileID: 8300000, guid: 24c60eb1d7bf2ce429deb7408065fff4, type: 3}
     dialogueAction: 0
     lastLine: 0
     options:
@@ -59,7 +61,6 @@ MonoBehaviour:
       nextNodeID: 5
   - nodeID: 5
     dialogueText: The voice still seems to talk directly in your brain
-    voiceLine: {fileID: 8300000, guid: 2b571bcf155639a47b0c2bd7d8f368a5, type: 3}
     dialogueAction: 0
     lastLine: 0
     options:
@@ -71,7 +72,6 @@ MonoBehaviour:
       nextNodeID: 10
   - nodeID: 6
     dialogueText: That was a great movie. What about another one ?
-    voiceLine: {fileID: 8300000, guid: fff860c6f02e2b74bbee8350f332668a, type: 3}
     dialogueAction: 0
     lastLine: 0
     options:
@@ -80,7 +80,6 @@ MonoBehaviour:
   - nodeID: 7
     dialogueText: His voice is really tempting. What are you going to do about it
       ?
-    voiceLine: {fileID: 8300000, guid: fd0e260e8ed575b48acd0b6b66634a73, type: 3}
     dialogueAction: 0
     lastLine: 0
     options:
@@ -91,9 +90,8 @@ MonoBehaviour:
   - nodeID: 10
     dialogueText: "Why do you always have to go, man?! We were having a good time\u2026
       You always ruin everything\u2026"
-    voiceLine: {fileID: 8300000, guid: fd0e260e8ed575b48acd0b6b66634a73, type: 3}
     dialogueAction: 0
-    lastLine: 1
+    lastLine: 0
     options:
     - optionText: 
       nextNodeID: 0
