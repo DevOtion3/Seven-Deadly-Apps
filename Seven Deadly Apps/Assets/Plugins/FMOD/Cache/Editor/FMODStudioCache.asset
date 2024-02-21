@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638440449768410014
+  lastModified: 638441149142572519
   FileSizes:
   - Name: Desktop
-    Value: 1194
+    Value: 1340
   Exists: 1
 --- !u!114 &-2262845017711364406
 MonoBehaviour:
@@ -71,8 +71,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 0
   Parameters: []
-  MinDistance: 59.5
-  MaxDistance: 7400
+  MinDistance: 0.5
+  MaxDistance: 150
   Length: 32000
 --- !u!114 &11400000
 MonoBehaviour:
@@ -103,7 +103,7 @@ MonoBehaviour:
   - {fileID: -5560884842883493136}
   StringsBanks:
   - {fileID: 8393001357970107537}
-  cacheTime: 638440449768420016
+  cacheTime: 638441163842099067
   cacheVersion: 131616
 --- !u!114 &1292454405657618237
 MonoBehaviour:
@@ -147,10 +147,10 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/PLAYER.bank
   Name: PLAYER
   StudioPath: bank:/PLAYER
-  lastModified: 638440449768420016
+  lastModified: 638441163842099067
   FileSizes:
   - Name: Desktop
-    Value: 41856
+    Value: 37376
   Exists: 1
 --- !u!114 &4549230351038686289
 MonoBehaviour:
@@ -167,7 +167,7 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/MUSIC.bank
   Name: MUSIC
   StudioPath: bank:/MUSIC
-  lastModified: 638440449768410014
+  lastModified: 638439356954833095
   FileSizes:
   - Name: Desktop
     Value: 1149696
@@ -187,10 +187,10 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank
   Name: AMBIENCE
   StudioPath: bank:/AMBIENCE
-  lastModified: 638440449768370003
+  lastModified: 638441134726090514
   FileSizes:
   - Name: Desktop
-    Value: 388864
+    Value: 391392
   Exists: 1
 --- !u!114 &7094925878286332688
 MonoBehaviour:
@@ -216,8 +216,8 @@ MonoBehaviour:
   Is3D: 1
   IsOneShot: 1
   Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
+  MinDistance: 0
+  MaxDistance: 6.8
   Length: 0
 --- !u!114 &7454699711775091263
 MonoBehaviour:
@@ -261,8 +261,8 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638440449768410014
+  lastModified: 638441149142577749
   FileSizes:
   - Name: Desktop
-    Value: 1214
+    Value: 1302
   Exists: 1

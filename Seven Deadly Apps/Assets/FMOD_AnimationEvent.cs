@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class FMOD_AnimationEvent : MonoBehaviour
 {
@@ -10,24 +11,10 @@ public class FMOD_AnimationEvent : MonoBehaviour
     public FMODUnity.EventReference stepEvent;
     public FMODUnity.EventReference clothEvent;
 
-    [SerializeField] private float vel;
-
-    private Animator animator;
-
-    
-    private void Start()
-    {
-        animator = GetComponent<Animator>();
-    }
-    
-    private void Update()
-    {
-        vel = animator.GetFloat("Input Magnitude");
-        FMODUnity.RuntimeManager.StudioSystem.setParameterByName("PlayerVelocity", vel);
-    }
-
     public void PlaySFX(string anim)
     {
+
+        
         if(anim == "step")
         {
             FMODUnity.RuntimeManager.PlayOneShotAttached(stepEvent, gameObject);
@@ -37,5 +24,16 @@ public class FMOD_AnimationEvent : MonoBehaviour
         {
             FMODUnity.RuntimeManager.PlayOneShotAttached(clothEvent, gameObject);
         }
+    }
+
+    private void Awake()
+    {
+        stepInstane = RuntimeManager.CreateInstance(stepEvent);
+    }
+
+    public void SetParameter(string param, float value)
+    {
+        stepInstane.setParameterByName(param, value);
+        Debug.Log("a");
     }
 }
