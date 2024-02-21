@@ -187,6 +187,9 @@ GameObject:
   - component: {fileID: 43294428}
   - component: {fileID: 43294427}
   - component: {fileID: 43294426}
+  - component: {fileID: 43294430}
+  - component: {fileID: 43294429}
+  - component: {fileID: 43294431}
   m_Layer: 0
   m_Name: Sloth
   m_TagString: Untagged
@@ -252,13 +255,76 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 43294425}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0058264807, y: 0.99913985, z: 0.041053023, w: -0.0005491346}
-  m_LocalPosition: {x: 1.86, y: 11.46, z: 20.18}
+  m_LocalRotation: {x: -0.00036592784, y: 0.7044714, z: 0.7097316, w: -0.0009826944}
+  m_LocalPosition: {x: 2.9, y: -2.9, z: 26.66}
   m_LocalScale: {x: 4.35, y: 3.58, z: 3.37}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -4.705, y: 180.091, z: -0.672}
+  m_LocalEulerAnglesHint: {x: -89.56, y: 345.645, z: -165.595}
+--- !u!114 &43294429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43294425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc6b781b3bf1b7c4ea737661d225550c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTransform: {fileID: 8410584917521083012}
+  detectionRange: 25
+  attackRange: 10
+  fixedXRotation: -89.56
+  movementSpeed: 3
+--- !u!136 &43294430
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43294425}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.29
+  m_Height: 2.96
+  m_Direction: 0
+  m_Center: {x: 9.882452e-10, y: 0.47, z: 0.1737769}
+--- !u!136 &43294431
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 43294425}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.26
+  m_Height: 5.38
+  m_Direction: 1
+  m_Center: {x: 9.882452e-10, y: 2.3319948, z: 0.17377684}
 --- !u!1 &133454931
 GameObject:
   m_ObjectHideFlags: 0
@@ -4822,7 +4888,6 @@ MonoBehaviour:
       Data3: 0
       Data4: 0
     Path: 
-  vel: 0
 --- !u!4 &8447082966869444389
 Transform:
   m_ObjectHideFlags: 0
