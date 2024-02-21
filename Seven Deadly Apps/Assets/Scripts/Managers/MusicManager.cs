@@ -7,7 +7,7 @@ Controls the global music and sounds of the scene, should eb a singleton to allo
 Methods for adjusting paramters, creating event instances and other global music functions
 */
 
-public class MusicManager : Singleton
+public class MusicManager : Singleton<MusicManager>
 {
 
 }

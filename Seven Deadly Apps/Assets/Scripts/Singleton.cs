@@ -2,21 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Singleton : MonoBehaviour
+public abstract class Singleton<T> : MonoBehaviour where T : Singleton<T>
 {
-    public static Singleton instance { get; private set; }
+    public static T instance;
 
-    private void Awake() 
-    { 
-        // If there is an instance, and it's not me, delete myself.
-        
-        if (instance != null && instance != this) 
-        { 
-            Destroy(this); 
-        } 
-        else 
-        { 
-            instance = this; 
-        } 
+    protected virtual void Awake()
+    {
+        if (instance && instance != this)
+        {
+            Destroy(gameObject);
+            return;
+        }
+
+        instance = (T)this;
     }
 }

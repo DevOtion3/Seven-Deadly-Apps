@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class SlothAI : MonoBehaviour
@@ -9,12 +10,29 @@ public class SlothAI : MonoBehaviour
     public float movementSpeed = 3f; // Speed at which the boss moves towards the player
 
     private bool isAttacking = false;
+    private Animator anim;
+
+    private void Awake()
+    {
+        anim = GetComponent<Animator>();
+    }
 
     private void Update()
     {
         // Check if the boss is not already attacking
         if (!isAttacking)
         {
+            if (DialogueManager.instance.IsInDialogue())
+            {
+                anim.Play("SlothIdle");
+                movementSpeed = 0;
+            }
+            else
+            {
+                anim.Play("SlothWalk");
+                movementSpeed = 3;
+            }
+
             // Check if the player is within detection range
             float distanceToPlayer = Vector3.Distance(new Vector3(transform.position.x, 0f, transform.position.z), new Vector3(playerTransform.position.x, 0f, playerTransform.position.z));
             if (distanceToPlayer < detectionRange)
