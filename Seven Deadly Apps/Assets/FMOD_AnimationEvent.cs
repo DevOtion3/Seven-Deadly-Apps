@@ -33,7 +33,6 @@ public class FMOD_AnimationEvent : MonoBehaviour
 
     public void SetParameter(string param, float value)
     {
-        stepInstane.setParameterByName(param, value);
-        Debug.Log("a");
+        RuntimeManager.StudioSystem.setParameterByName(param, value);
     }
 }
