@@ -1,3 +1,4 @@
+using FMODUnity;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
@@ -7,13 +8,11 @@ using UnityEngine.UIElements;
 public class DialogueManager : Singleton
 {
     private const int NODE_ID_OFFSET = 1;
-
+    
     //the reason we use -1 is that dialogue lines that have no options get set to -1 automatically
     private const int END_DIALOGUE_NODE_ID = -1;
 
     [SerializeField] private GameObject buttonPrefab;
-
-    [SerializeField] private AudioSource dialogueAudioPlayer; // FMOD
 
     private TMP_Text dialogueText;
     private GameObject buttonContainer;
@@ -28,26 +27,20 @@ public class DialogueManager : Singleton
         dialogueText = dialoguePanel.GetComponentInChildren<TMP_Text>();
         buttonContainer = dialoguePanel.GetComponentInChildren<VerticalLayoutGroup>().gameObject;
 
-        dialogueAudioPlayer = dialoguePanel.GetComponent<AudioSource>(); // FMOD
-
         if (dialoguePanel == null)
-        {
             Debug.LogError("Missing Dialogue Panel!");
-        }
     }
 
     private void Start()
     {
-        DialogueOption emptyOption = new DialogueOption();
+        var emptyOption = new DialogueOption();
         dialogueData = WorldSettings.LevelDialogue;
 
         // very hacky code so designers don't have to add in empty dialogue options themselves
-       foreach (DialogueNode node in dialogueData.dialogueNodes)
-      {
+        foreach (var node in dialogueData.dialogueNodes)
+        {
            if (node.options.Count == 0)
-           {
                 node.options.Add(emptyOption);
-           }
         }
     }
 
@@ -58,6 +51,7 @@ public class DialogueManager : Singleton
         DisplayDialogue();
         Debug.Log("Dialogue has started");
     }
+    
     public void EndDialogue()
     {
         dialoguePanel.SetActive(false);
@@ -65,10 +59,10 @@ public class DialogueManager : Singleton
 
     private void SetCurrentNode(int nodeID)
     {
-        int currentIndex = 0;
+        var currentIndex = 0;
         if(dialogueData.dialogueNodes.Count > 0) 
         {
-            foreach (DialogueNode node in dialogueData.dialogueNodes)
+            foreach (var node in dialogueData.dialogueNodes)
             {
                 if (node.nodeID == nodeID)
                 {
@@ -76,29 +70,22 @@ public class DialogueManager : Singleton
                     break;
                 }
                 else if (currentIndex >= dialogueData.dialogueNodes.Count) //Error checking in case you input an invalid nodeID
-                {
                     Debug.LogError($"Could not find Dialogue Node at ID:({nodeID})");
-                }
                 currentIndex++;
             }
         }
         else
-        {
             Debug.LogError("Dialogue Node count is less than or equal to 0!");
-        }
     }
 
     private void DisplayDialogue()
     {
-        dialogueAudioPlayer.Stop(); // FMOD
-
         ClearDialogueDisplay();
 
         dialogueText.text = currentNode.dialogueText;
 
-        dialogueAudioPlayer.clip = currentNode.voiceLine; // FMOD
-
-        dialogueAudioPlayer.Play(); // FMOD
+        var dialogueAudio = WorldSettings.LevelDialogue.dialogueAudio;
+        RuntimeManager.PlayOneShot(dialogueAudio);
 
         for (int i = 0; i < currentNode.options.Count; i++)
         {
