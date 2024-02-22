@@ -1,47 +1,63 @@
-using System.Collections;
 using System.Collections.Generic;
+using System.Collections;
 using UnityEngine;
 
 public class PlayerCombat : MonoBehaviour
 {
+    public Transform firePoint;
     public GameObject projectilePrefab;
     public float projectileSpeed = 10f;
-    public Transform target; // Référence à l'ennemi ou au curseur
+    public float projectileLifespan = 2f;
+    public float fireCooldown = 0.5f;
+    private bool canFire = true; // Flag to control firing rate
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (canFire && Input.GetKeyDown(KeyCode.Space))
         {
-            // Calcul de la direction
-            Vector3 direction;
-            if (target != null)
-            {
-                // Si une cible est définie, diriger le projectile vers la cible
-                direction = (target.position - transform.position).normalized;
-            }
-            else
-            {
-                // Si aucune cible n'est définie, diriger le projectile vers le curseur de la souris
-                Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-                direction = (mousePosition - transform.position).normalized;
-            }
-
-            // Création du projectile
-            GameObject projectile = Instantiate(projectilePrefab, transform.position, Quaternion.identity);
-
-            // Obtention du composant Rigidbody2D du projectile
-            Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
-            if (rb != null)
-            {
-                // Application de la vitesse au projectile dans la direction calculée
-                rb.velocity = direction * projectileSpeed;
-            }
-            else
-            {
-                Debug.LogWarning("Le projectile ne possède pas de composant Rigidbody2D.");
-            }
+            FireProjectile();
         }
     }
+
+    void FireProjectile()
+    {
+        if (firePoint == null || projectilePrefab == null)
+        {
+            Debug.LogError("Fire point or projectile prefab is not assigned!");
+            return;
+        }
+
+        // Set canFire flag to false to prevent rapid firing
+        canFire = false;
+
+        // Calculate direction towards cursor position
+        Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 direction = (cursorPosition - firePoint.position).normalized;
+
+        // Instantiate the projectile at the fire point with an offset on the y-axis
+        Vector3 spawnPosition = firePoint.position + new Vector3(0, 15, 0);
+        GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
+
+        // Set projectile direction and speed
+        Rigidbody rb = projectile.GetComponent<Rigidbody>();
+        if (rb != null)
+        {
+            rb.velocity = direction * projectileSpeed;
+        }
+
+        // Destroy the projectile after the specified lifespan
+        Destroy(projectile, projectileLifespan);
+
+        // Start a coroutine to reset canFire after the cooldown period
+        StartCoroutine(ResetFireFlag());
+    }
+
+    IEnumerator ResetFireFlag()
+    {
+        // Wait for the cooldown period before allowing the player to fire again
+        yield return new WaitForSeconds(fireCooldown);
+
+        // Reset the canFire flag to true to allow firing again
+        canFire = true;
+    }
 }
-
-
