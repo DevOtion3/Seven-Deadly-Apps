@@ -1274,7 +1274,6 @@ GameObject:
   - component: {fileID: 1949509205}
   - component: {fileID: 1949509204}
   - component: {fileID: 1949509209}
-  - component: {fileID: 1949509207}
   m_Layer: 0
   m_Name: Boss Dialouge Trigger
   m_TagString: Untagged
@@ -1332,18 +1331,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1949509207
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949509203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78c7607d42bbb6f40babfac12f429b51, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1949509209
 MonoBehaviour:
   m_ObjectHideFlags: 0
