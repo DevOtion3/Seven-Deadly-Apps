@@ -63,6 +63,7 @@
 			<destination>{2c132371-b411-4ed4-91a0-f5b066fc0ae9}</destination>
 			<destination>{11dfdb40-b3f5-414d-af51-9d2de54e4cb9}</destination>
 			<destination>{8208d1d6-e27e-4f60-b3bc-3f1a20cca8d6}</destination>
+			<destination>{54ee2e64-e8d3-4fb5-806a-7b1c2fdfdf68}</destination>
 		</relationship>
 		<relationship name="modules">
 			<destination>{020c3096-302a-4c12-8a3f-14c72554677e}</destination>
@@ -136,6 +137,11 @@
 			<destination>{2aba5c41-4d84-4fea-8e26-eafb7a1fc1ec}</destination>
 		</relationship>
 	</object>
+	<object class="AutomationTrack" id="{54ee2e64-e8d3-4fb5-806a-7b1c2fdfdf68}">
+		<relationship name="automator">
+			<destination>{1771d6b9-df17-46ba-a943-07bc930c8282}</destination>
+		</relationship>
+	</object>
 	<object class="SingleSound" id="{020c3096-302a-4c12-8a3f-14c72554677e}">
 		<property name="length">
 			<value>13.558624999999999</value>
@@ -148,6 +154,9 @@
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
+		<relationship name="automators">
+			<destination>{1771d6b9-df17-46ba-a943-07bc930c8282}</destination>
+		</relationship>
 		<relationship name="effectChain">
 			<destination>{cd26dd6f-7e41-4939-9892-631ace9c43fe}</destination>
 		</relationship>
@@ -229,6 +238,14 @@
 	</object>
 	<object class="MixerBusPanner" id="{bc4be68d-c001-4c2d-b9a7-1cf0c86045b5}" />
 	<object class="MixerBusFader" id="{b180116e-034b-40ec-b079-1e5867864792}" />
+	<object class="Automator" id="{1771d6b9-df17-46ba-a943-07bc930c8282}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>volume</value>
+		</property>
+		<relationship name="automationCurves">
+			<destination>{0bb6fae6-2a81-4cca-9eac-4d9dc235a2cc}</destination>
+		</relationship>
+	</object>
 	<object class="MixerBusEffectChain" id="{cd26dd6f-7e41-4939-9892-631ace9c43fe}">
 		<relationship name="effects">
 			<destination>{384a7bc4-83c8-454a-882b-283ff69c11d7}</destination>
@@ -270,6 +287,16 @@
 	</object>
 	<object class="MixerBusPanner" id="{3f2c76b3-c3d2-410d-a644-cb678d03f41f}" />
 	<object class="MixerBusFader" id="{49a9f68d-1762-4235-8a59-9dbb4dc167ed}" />
+	<object class="AutomationCurve" id="{0bb6fae6-2a81-4cca-9eac-4d9dc235a2cc}">
+		<relationship name="parameter">
+			<destination>{ab9bdfec-a8df-43eb-b0e3-bd632f3b6a9d}</destination>
+		</relationship>
+		<relationship name="automationPoints">
+			<destination>{d55fa7b8-31b7-4480-bb42-b026539bbbae}</destination>
+			<destination>{488b5ac5-d898-4c49-a9eb-7bf1c74ce631}</destination>
+			<destination>{f6ac36cd-f8d6-4f0c-a741-dc8c8fe4420b}</destination>
+		</relationship>
+	</object>
 	<object class="GainEffect" id="{384a7bc4-83c8-454a-882b-283ff69c11d7}">
 		<property name="gain">
 			<value>-4</value>
@@ -462,6 +489,30 @@
 			<destination>{b5cd8039-8ec5-4abd-939e-60467f289200}</destination>
 		</relationship>
 	</object>
+	<object class="AutomationPoint" id="{d55fa7b8-31b7-4480-bb42-b026539bbbae}">
+		<property name="position">
+			<value>0.0042372881355932203</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{488b5ac5-d898-4c49-a9eb-7bf1c74ce631}">
+		<property name="position">
+			<value>0.5889830508474575</value>
+		</property>
+		<property name="value">
+			<value>0</value>
+		</property>
+	</object>
+	<object class="AutomationPoint" id="{f6ac36cd-f8d6-4f0c-a741-dc8c8fe4420b}">
+		<property name="position">
+			<value>0.62853107344632764</value>
+		</property>
+		<property name="value">
+			<value>-6</value>
+		</property>
+	</object>
 	<object class="Automator" id="{2aba5c41-4d84-4fea-8e26-eafb7a1fc1ec}">
 		<property name="nameOfPropertyBeingAutomated">
 			<value>mix</value>
@@ -523,10 +574,10 @@
 	</object>
 	<object class="AutomationPoint" id="{d51ad864-5cb3-462b-bc49-aebc133f44f6}">
 		<property name="position">
-			<value>0.95000000000000007</value>
+			<value>0.90000000000000002</value>
 		</property>
 		<property name="value">
-			<value>-6</value>
+			<value>-4</value>
 		</property>
 	</object>
 	<object class="AutomationPoint" id="{ffe11a58-03a5-4c33-90ff-567758fa37d9}">

@@ -43,34 +43,10 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638441249971511564
+  lastModified: 638442034086955218
   FileSizes:
   - Name: Desktop
-    Value: 1340
-  Exists: 1
---- !u!114 &-4793249686107085095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Diag 1/Monster Talk become distorted
-  m_EditorClassIdentifier: 
-  Name: Monster Talk become distorted
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 510003319
-    data2: 853555935
-  Type: 0
-  IsGlobal: 0
-  Labels: []
+    Value: 1532
   Exists: 1
 --- !u!114 &-2262845017711364406
 MonoBehaviour:
@@ -141,20 +117,19 @@ MonoBehaviour:
   - {fileID: -5560884842883493136}
   - {fileID: 4549230351038686289}
   - {fileID: 2879348568615839540}
-  - {fileID: 1948559986737610824}
   EditorEvents:
   - {fileID: -2262845017711364406}
   - {fileID: 1292454405657618237}
   - {fileID: 7454699711775091263}
   - {fileID: 7094925878286332688}
   - {fileID: -8658145481691715985}
-  - {fileID: 5012063885345343802}
-  EditorParameters: []
+  EditorParameters:
+  - {fileID: 5361069097023483474}
   MasterBanks:
   - {fileID: -5560884842883493136}
   StringsBanks:
   - {fileID: 8393001357970107537}
-  cacheTime: 638441408846567717
+  cacheTime: 638442034087292250
   cacheVersion: 131616
 --- !u!114 &1292454405657618237
 MonoBehaviour:
@@ -183,26 +158,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 81103
---- !u!114 &1948559986737610824
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Dialogue.bank
-  m_EditorClassIdentifier: 
-  Path: Fmod/Seven Deadly Apps/Build/Desktop/Dialogue.bank
-  Name: Dialogue
-  StudioPath: bank:/Dialogue
-  lastModified: 638441408846504821
-  FileSizes:
-  - Name: Desktop
-    Value: 462304
-  Exists: 1
 --- !u!114 &2879348568615839540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -218,7 +173,7 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/PLAYER.bank
   Name: PLAYER
   StudioPath: bank:/PLAYER
-  lastModified: 638441249971588286
+  lastModified: 638442034087292250
   FileSizes:
   - Name: Desktop
     Value: 37376
@@ -238,12 +193,12 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/MUSIC.bank
   Name: MUSIC
   StudioPath: bank:/MUSIC
-  lastModified: 638440449768410014
+  lastModified: 638439356954833095
   FileSizes:
   - Name: Desktop
     Value: 1149696
   Exists: 1
---- !u!114 &5012063885345343802
+--- !u!114 &5361069097023483474
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -252,25 +207,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/Dialogue TEST METHOD 1/Diag 1
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Monster Distort
   m_EditorClassIdentifier: 
-  Path: event:/Dialogue TEST METHOD 1/Diag 1
-  Guid:
-    Data1: -594822272
-    Data2: 1302121129
-    Data3: -861606496
-    Data4: -1128547937
-  Banks:
-  - {fileID: 1948559986737610824}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -4793249686107085095}
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 14750
+  Name: Monster Distort
+  StudioPath: parameter:/Monster Distort
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 510003319
+    data2: 853555935
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &6823019090220659379
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,7 +237,7 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank
   Name: AMBIENCE
   StudioPath: bank:/AMBIENCE
-  lastModified: 638440556122750975
+  lastModified: 638442034086920044
   FileSizes:
   - Name: Desktop
     Value: 391392
@@ -360,8 +311,8 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638441408846567717
+  lastModified: 638442034086960113
   FileSizes:
   - Name: Desktop
-    Value: 1462
+    Value: 1348
   Exists: 1
