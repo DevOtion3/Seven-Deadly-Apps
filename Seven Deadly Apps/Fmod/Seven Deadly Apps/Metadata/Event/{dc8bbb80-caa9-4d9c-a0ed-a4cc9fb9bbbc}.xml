@@ -146,7 +146,7 @@
 			<value>one hour later</value>
 		</property>
 		<property name="volume">
-			<value>-8.5</value>
+			<value>-12</value>
 		</property>
 		<relationship name="event">
 			<destination>{1ef0f3d1-b15f-408e-a1ec-33d4c75ef042}</destination>
@@ -159,7 +159,7 @@
 	</object>
 	<object class="EventSound" id="{575c1c16-06a0-4f79-bdd0-9757c8399dcb}">
 		<property name="volume">
-			<value>2.5</value>
+			<value>4.5</value>
 		</property>
 		<relationship name="event">
 			<destination>{fd242219-2ec0-4e69-902a-a1adc23e9610}</destination>
@@ -182,6 +182,9 @@
 		</relationship>
 	</object>
 	<object class="EventSound" id="{fad3feeb-3631-47c1-8738-255c2c57853f}">
+		<property name="volume">
+			<value>-3.5</value>
+		</property>
 		<relationship name="event">
 			<destination>{9760bee5-07c2-4a44-aa00-a21c5e37e5e2}</destination>
 		</relationship>
