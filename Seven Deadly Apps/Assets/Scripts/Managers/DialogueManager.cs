@@ -1,9 +1,11 @@
+using FMOD.Studio;
 using FMODUnity;
 using TMPro;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.UIElements;
+using STOP_MODE = FMOD.Studio.STOP_MODE;
 
 public class DialogueManager : Singleton<DialogueManager>
 {
@@ -20,6 +22,7 @@ public class DialogueManager : Singleton<DialogueManager>
     private DialogueNode currentNode;
     private DialogueData dialogueData;
     private bool inDialogue;
+    private EventInstance dialogueAudioInstance;
 
     [SerializeField] private GameObject dialoguePanel;
 
@@ -37,6 +40,7 @@ public class DialogueManager : Singleton<DialogueManager>
     {
         var emptyOption = new DialogueOption();
         dialogueData = WorldSettings.LevelDialogue;
+        dialogueAudioInstance = RuntimeManager.CreateInstance(dialogueData.dialogueAudio);
 
         // very hacky code so designers don't have to add in empty dialogue options themselves
         foreach (var node in dialogueData.dialogueNodes)
@@ -87,8 +91,8 @@ public class DialogueManager : Singleton<DialogueManager>
 
         dialogueText.text = currentNode.dialogueText;
         
-        var dialogueAudio = WorldSettings.LevelDialogue.dialogueAudio;
-        RuntimeManager.PlayOneShot(dialogueAudio);
+        dialogueAudioInstance.stop(STOP_MODE.IMMEDIATE);
+        dialogueAudioInstance.start();
 
         for (var i = 0; i < currentNode.options.Count; i++)
         {
