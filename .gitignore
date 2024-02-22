@@ -9,6 +9,7 @@ This .gitignore file should be placed at the root of your Unity project director
 /Seven Deadly Apps/[Bb]uilds/
 /Seven Deadly Apps/[Ll]ogs/
 /Seven Deadly Apps/[Uu]ser[Ss]ettings/
+/Seven Deadly Apps/fmod_editor.log
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
