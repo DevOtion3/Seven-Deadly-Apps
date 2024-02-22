@@ -1,5 +1,29 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9116984227546437166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Diag 1/Monster Distort
+  m_EditorClassIdentifier: 
+  Name: Monster Distort
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 510003319
+    data2: 853555935
+  Type: 0
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
 --- !u!114 &-8658145481691715985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43,7 +67,7 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638442034086955218
+  lastModified: 638442044570652341
   FileSizes:
   - Name: Desktop
     Value: 1532
@@ -99,6 +123,34 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &-994487062171974162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/TEST/Diag 1
+  m_EditorClassIdentifier: 
+  Path: event:/TEST/Diag 1
+  Guid:
+    Data1: -594822272
+    Data2: 1302121129
+    Data3: -861606496
+    Data4: -1128547937
+  Banks:
+  - {fileID: 7144928583538473574}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -9116984227546437166}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 14750
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -117,19 +169,21 @@ MonoBehaviour:
   - {fileID: -5560884842883493136}
   - {fileID: 4549230351038686289}
   - {fileID: 2879348568615839540}
+  - {fileID: 7144928583538473574}
   EditorEvents:
   - {fileID: -2262845017711364406}
   - {fileID: 1292454405657618237}
   - {fileID: 7454699711775091263}
   - {fileID: 7094925878286332688}
   - {fileID: -8658145481691715985}
+  - {fileID: -994487062171974162}
   EditorParameters:
   - {fileID: 5361069097023483474}
   MasterBanks:
   - {fileID: -5560884842883493136}
   StringsBanks:
   - {fileID: 8393001357970107537}
-  cacheTime: 638442041654969434
+  cacheTime: 638442044572715572
   cacheVersion: 131616
 --- !u!114 &1292454405657618237
 MonoBehaviour:
@@ -269,6 +323,26 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 6.8
   Length: 0
+--- !u!114 &7144928583538473574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/DIALOGUE.bank
+  m_EditorClassIdentifier: 
+  Path: Fmod/Seven Deadly Apps/Build/Desktop/DIALOGUE.bank
+  Name: DIALOGUE
+  StudioPath: bank:/DIALOGUE
+  lastModified: 638442044572715572
+  FileSizes:
+  - Name: Desktop
+    Value: 538336
+  Exists: 1
 --- !u!114 &7454699711775091263
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,8 +385,8 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638442034086960113
+  lastModified: 638442044570656978
   FileSizes:
   - Name: Desktop
-    Value: 1348
+    Value: 1430
   Exists: 1
