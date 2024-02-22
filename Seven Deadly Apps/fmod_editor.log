@@ -6,7 +6,7 @@
 [LOG] OutputCoreAudio::init                    : Maximum hardware read size: 512 samples, Software buffer size: 512 samples, Number of software buffers: 4.
 [LOG] Thread::initThread                       : Init FMOD stream thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFB, Stack Size: 98304, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Affinity: 0x4000000000000001, Priority: 0xFFFF7FFA, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 0x7f865207b808 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 0x7f860336d008 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Affinity: 0x4000000000000003, Priority: 0xFFFF7FFD, Stack Size: 98304, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -18,10 +18,446 @@
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] Manager::readBank                        : fileversion = 142, compatVersion = 140 (oldest = 44, newest = 142)
 [LOG] PlaybackSystem::acquireMasterBus         : Setting master channel group format to 6
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f86021090b8, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f86021090b8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e261b960
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f86021090b8
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f86057ef238)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f86430ad238)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f86430b6d78)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e1f09b88, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e1f09b88
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e2629090
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e1f09b88
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f86021090b8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f86057b5c68)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f8662995028)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e27160f8, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e27160f8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e27163c0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e27160f8
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e1f09b88)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e23ea848)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e23f9678)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e251f5f8, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e251f5f8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e251f050
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e251f5f8
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e27160f8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e24e3d78)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f8602beb8f8)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e3048628, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e3048628
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e30488f0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e3048628
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e251f5f8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f8602e3f998)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f8602e41c18)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e3a68dd8, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e3a68dd8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e3a690a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e3a68dd8
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e3048628)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e2514e28)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e251f2a8)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e252cbb8, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e252cbb8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e253de80
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e252cbb8
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e3a68dd8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e252eec8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e252f058)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e26c8608, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e26c8608
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e26ad6c0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e26c8608
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e252cbb8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e27e8358)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e27e2d28)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e256ccb8, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e256ccb8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e256e310
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e256ccb8
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e26c8608)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3acc308)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3af8f48)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e26fd078, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e26fd078
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e26e4a90
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e26fd078
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e256ccb8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e26daca8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e26e61d8)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e3992a08, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e3992a08
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e39a9ba0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e3992a08
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e26fd078)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3ce98a8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3c7bf18)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e35b2988, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e35b2988
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e35cbf00
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e35b2988
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e3992a08)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e35fc1b8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3514b18)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e3456588, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e3456588
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e3459010
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e3456588
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e35b2988)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e39ac528)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e39de2f8)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e31c22e8, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e31c22e8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e31d9bf0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e31c22e8
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e3456588)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3110548)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e35e6f78)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f8643263b88, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f8643263b88
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f8643263e50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f8643263b88
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e31c22e8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3460528)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e34606b8)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f86430dc9e8, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f86430dc9e8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f86430dba50
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f86430dc9e8
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f8643263b88)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3b3ddc8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3b69c38)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e36a59f8, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e36a59f8
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e3673eb0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e36a59f8
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f86430dc9e8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e31c22e8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e31f7f18)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e3bcbf18, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e3bcbf18
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e3bc60a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e3bcbf18
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e36a59f8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3b955a8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3b8e7f8)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e3736f38, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e3736f38
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e37303a0
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e3736f38
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e3bcbf18)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e36f3fa8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e36f4138)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e385d218, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e385d218
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e388e480
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e385d218
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e3736f38)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e36f2ce8)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3855ff8)
+[LOG] SystemI::createSound                     : filename = Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank : mode 02010082
+[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
+[LOG] AsyncThread::add                         : add sound to async queue : soundi = 0x7f85e32d5c68, queue head = 0x7f8602fbad08, queue count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 0x7f85e32d5c68
+[LOG] SystemI::createSoundInternal             :     Create name='Fmod/Seven Deadly Apps/Build/Desktop/AMBIENCE.bank', mode=0x02010082
+[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 224
+[LOG] SystemI::createSoundInternal             :     exinfo->length             = 383616
+[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 7776
+[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 0x7f85e32d0670
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
+[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
+[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
+[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Cinema LoFQ Ambience_17', format=5, channels=2, frequency=48000, lengthbytes=360256, lengthpcm=1536000, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.011090.
+[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 0x7f85e32d5c68
+[LOG] SoundI::release                          :  (0x7f85e21fd408)
+[LOG] SoundI::release                          :     Slap_04 (0x7f85e21c5598)
+[LOG] SoundI::release                          :  (0x7f85e21b18a8)
+[LOG] SoundI::release                          :     Slap_05 (0x7f85e214f558)
+[LOG] SoundI::release                          :  (0x7f85e21e1a68)
+[LOG] SoundI::release                          :     Slap_06 (0x7f85e21fcca8)
+[LOG] SoundI::release                          :  (0x7f85e21b6e28)
+[LOG] SoundI::release                          :     Slap_07 (0x7f85e2107a08)
+[LOG] SoundI::release                          :  (0x7f85e21bddc8)
+[LOG] SoundI::release                          :     Slap_08 (0x7f85e21bf2d8)
+[LOG] SoundI::release                          :  (0x7f8613eb90b8)
+[LOG] SoundI::release                          :     Carpet Steps-glued-03.wav_20 (0x7f8607359d18)
+[LOG] SoundI::release                          :  (0x7f86056d0188)
+[LOG] SoundI::release                          :     Carpet Steps-glued-04.wav_19 (0x7f8602b56668)
+[LOG] SoundI::release                          :  (0x7f85e228fa48)
+[LOG] SoundI::release                          :     Carpet Steps-glued-05.wav_18 (0x7f85e228b428)
+[LOG] SoundI::release                          :  (0x7f85e2287238)
+[LOG] SoundI::release                          :     Carpet Steps-glued.wav_21 (0x7f85e228a398)
+[LOG] SoundI::release                          :  (0x7f8602bfe2e8)
+[LOG] SoundI::release                          :     Narrator Diag_22 (0x7f8602bfe458)
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e32d5c68)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3d62408)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3d62598)
+[LOG] SoundI::release                          : Cinema LoFQ Ambience_17 (0x7f85e385d218)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3d2f288)
+[LOG] SoundI::release                          :     Cinema LoFQ Ambience_17 (0x7f85e3d2e908)
+[LOG] SoundI::release                          :  (0x7f85e2195748)
+[LOG] SoundI::release                          :     One_Hour_Later.mp3_29 (0x7f85e21d87e8)
+[LOG] SoundI::release                          :  (0x7f8602bfd538)
+[LOG] SoundI::release                          :     Sloth diag_26 (0x7f8602bfd6a8)
+[LOG] SoundI::release                          :  (0x7f85e2157d08)
+[LOG] SoundI::release                          :     Narrator Diag_23 (0x7f85e21bdaf8)
+[LOG] SoundI::release                          :  (0x7f8602bfd9c8)
+[LOG] SoundI::release                          :     Sloth diag_25 (0x7f8602bfdb38)
+[LOG] SoundI::release                          :  (0x7f8602bfde58)
+[LOG] SoundI::release                          :     Narrator Diag_24 (0x7f8602bfdfc8)
+[LOG] Thread::callback                         : FMOD Studio update thread finished.
 [LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] Thread::callback                         : FMOD Studio sample load thread finished.
 [LOG] LiveUpdate::release                      : 
 [LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
 [LOG] Thread::callback                         : FMOD stream thread finished.
 [LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Profile::disconnectAll                   : Profiler disconnecting all clients
 [LOG] SystemI::close                           : Closed.
+[ERR] assert                                   : assertion: 'gSystemInitCount == 0' failed

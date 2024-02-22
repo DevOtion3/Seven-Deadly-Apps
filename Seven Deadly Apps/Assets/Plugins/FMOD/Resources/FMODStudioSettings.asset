@@ -479,6 +479,7 @@ MonoBehaviour:
   - Master
   Banks:
   - AMBIENCE
+  - DIALOGUE
   - MUSIC
   - PLAYER
   BanksToLoad: []
