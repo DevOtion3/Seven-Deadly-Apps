@@ -1,6 +1,6 @@
 using UnityEngine;
 using FMODUnity; 
-public class Player : MonoBehaviour
+public class Player : Damageable
 {
     [SerializeField] private float walkSpeed = 2f;
     [SerializeField] private float runSpeed = 3f;
@@ -9,8 +9,9 @@ public class Player : MonoBehaviour
     private CharacterController characterController;
     private FMOD_AnimationEvent animEvent;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         animator = GetComponent<Animator>();
         characterController = GetComponent<CharacterController>();
         animEvent = GetComponent<FMOD_AnimationEvent>();
