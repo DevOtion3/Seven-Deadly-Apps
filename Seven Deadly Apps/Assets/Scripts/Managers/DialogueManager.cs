@@ -1,3 +1,4 @@
+using DG.Tweening;
 using FMOD.Studio;
 using FMODUnity;
 using TMPro;
@@ -93,7 +94,13 @@ public class DialogueManager : Singleton<DialogueManager>
         
         dialogueAudioInstance.stop(STOP_MODE.IMMEDIATE);
         dialogueAudioInstance.start();
-
+        if (currentNode.lastLine)
+        {
+            DOVirtual.Float(0, 1, 10, value =>
+            {
+                RuntimeManager.StudioSystem.setParameterByName("Monster Distort", value);
+            });
+        }
         for (var i = 0; i < currentNode.options.Count; i++)
         {
             //this is the easiest way I could think of to do this, I feel like you can do this better with unity events but who knows

@@ -31,12 +31,18 @@ public class PlayerCombat : MonoBehaviour
         canFire = false;
 
         // Calculate direction towards cursor position
-        Vector3 cursorPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        Vector3 direction = (cursorPosition - firePoint.position).normalized;
+        var cameraRay = Camera.main.ScreenPointToRay(Input.mousePosition);
+        var groundPlane = new Plane(Vector3.up, transform.position);
+        
+        var cursorPosition = Vector3.zero;
+        if (groundPlane.Raycast(cameraRay, out var rayLength))
+            cursorPosition = cameraRay.GetPoint(rayLength);
+        var direction = (cursorPosition - firePoint.position).normalized;
+        direction.y = 0f;
 
         // Instantiate the projectile at the fire point with an offset on the y-axis
-        Vector3 spawnPosition = firePoint.position + new Vector3(0, 15, 0);
-        GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.identity);
+        Vector3 spawnPosition = firePoint.position + new Vector3(0, 3, 0);
+        GameObject projectile = Instantiate(projectilePrefab, spawnPosition, Quaternion.Euler(new Vector3(-90, 0, 0)));
 
         // Set projectile direction and speed
         Rigidbody rb = projectile.GetComponent<Rigidbody>();

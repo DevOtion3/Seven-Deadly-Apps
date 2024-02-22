@@ -183,7 +183,7 @@ MonoBehaviour:
   - {fileID: -5560884842883493136}
   StringsBanks:
   - {fileID: 8393001357970107537}
-  cacheTime: 638441469509761014
+  cacheTime: 638441500535205398
   cacheVersion: 131616
 --- !u!114 &1292454405657618237
 MonoBehaviour:
@@ -227,10 +227,10 @@ MonoBehaviour:
   Path: Fmod/Seven Deadly Apps/Build/Desktop/DIALOGUE.bank
   Name: DIALOGUE
   StudioPath: bank:/DIALOGUE
-  lastModified: 638441469509751005
+  lastModified: 638441500535205398
   FileSizes:
   - Name: Desktop
-    Value: 538336
+    Value: 539392
   Exists: 1
 --- !u!114 &2879348568615839540
 MonoBehaviour:

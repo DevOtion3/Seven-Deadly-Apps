@@ -176,79 +176,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 4.1760597, y: 21.661686, z: 81.55509}
   m_Center: {x: -18.633501, y: 0.30610085, z: 16.447697}
---- !u!1001 &38292708
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.7071068
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b3a6904506a646c4881aae04e413f77c, type: 2}
-    - target: {fileID: 919132149155446097, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-      propertyPath: m_Name
-      value: discProjectile
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
 --- !u!1 &120490550 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: afab1b805c25dc14caa4063077ba93c7, type: 3}
@@ -535,11 +462,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &362001664 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 9b963334413fb9e4ebe6c77804785c02, type: 3}
-  m_PrefabInstance: {fileID: 38292708}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &617265287
 GameObject:
   m_ObjectHideFlags: 0
@@ -4903,7 +4825,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   firePoint: {fileID: 8410584917521083012}
-  projectilePrefab: {fileID: 362001664}
+  projectilePrefab: {fileID: 2242700694106680759, guid: da6f7b640f83914418d7b0d33322caf4, type: 3}
   projectileSpeed: 10
   projectileLifespan: 1
   fireCooldown: 1
@@ -5173,4 +5095,3 @@ SceneRoots:
   - {fileID: 1949509206}
   - {fileID: 1977596999}
   - {fileID: 1337809850}
-  - {fileID: 38292708}
