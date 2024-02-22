@@ -11,7 +11,7 @@ public abstract class Damageable : MonoBehaviour
         health = maxHealth;
     }
 
-    public void Damage()
+    public virtual void Damage()
     {
         health--;
     }

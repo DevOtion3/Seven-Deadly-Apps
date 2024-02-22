@@ -34,5 +34,6 @@ public class DialogueTrigger : MonoBehaviour
     private void TriggerDialogue()
     {
         dialogueManager.StartDialogue(nodeID);
+        Destroy(gameObject);
     }
 }

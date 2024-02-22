@@ -1,7 +1,8 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class SlothAI : MonoBehaviour
+public class SlothAI : Damageable
 {
     public Transform playerTransform;
     public float detectionRange = 5f;
@@ -12,13 +13,20 @@ public class SlothAI : MonoBehaviour
     private bool isAttacking = false;
     private Animator anim;
 
-    private void Awake()
+    protected override void Awake()
     {
+        base.Awake();
         anim = GetComponent<Animator>();
     }
 
     private void Update()
     {
+        if (health == 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            Destroy(gameObject);
+        }
+
         // Check if the boss is not already attacking
         if (!isAttacking)
         {
@@ -58,9 +66,15 @@ public class SlothAI : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("PlayerProjectile"))
+            Damage();
+    }
+    
     private void AttackPlayer()
     {
-
+        playerTransform.GetComponent<Player>().Damage();
 
         // Stop the boss's movement
         movementSpeed = 0f;

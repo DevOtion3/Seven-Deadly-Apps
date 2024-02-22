@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Sloth.unity
     guid: c6188ed6159ceab419512999fbc65ce7
+  - enabled: 1
+    path: Assets/Scenes/End Scene.unity
+    guid: 9b1dbd93faa2eac43a42506d7a3ee5ad
   m_configObjects: {}

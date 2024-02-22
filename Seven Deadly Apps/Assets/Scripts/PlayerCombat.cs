@@ -13,6 +13,8 @@ public class PlayerCombat : MonoBehaviour
 
     void Update()
     {
+        if(DialogueManager.instance.IsInDialogue())
+            return;
         if (canFire && Input.GetKeyDown(KeyCode.Space))
         {
             FireProjectile();
