@@ -1274,7 +1274,6 @@ GameObject:
   - component: {fileID: 1949509205}
   - component: {fileID: 1949509204}
   - component: {fileID: 1949509209}
-  - component: {fileID: 1949509208}
   - component: {fileID: 1949509207}
   m_Layer: 0
   m_Name: Boss Dialouge Trigger
@@ -1296,10 +1295,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   onlyTriggerOnce: 0
-  messages:
-  - target: {fileID: 0}
-    messageName: 
-    messageData: 
+  messages: []
 --- !u!65 &1949509205
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1348,20 +1344,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c7607d42bbb6f40babfac12f429b51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1949509208
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1949509203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7d45c0b3f091d0a42969e7f677363bc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttonPrefab: {fileID: 0}
-  dialoguePanel: {fileID: 0}
 --- !u!114 &1949509209
 MonoBehaviour:
   m_ObjectHideFlags: 0
