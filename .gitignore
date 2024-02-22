@@ -71,3 +71,22 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /Seven Deadly Apps/[Aa]ssets/[Ss]treamingAssets/aa.meta
 /Seven Deadly Apps/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+
+# Never ignore DLLs in the FMOD subfolder.
+!/Seven Deadly Apps/[Aa]ssets/Plugins/FMOD/**/lib/*
+
+# Don't ignore images and gizmos used by FMOD in the Unity Editor.
+!/Seven Deadly Apps/[Aa]ssets/Gizmos/FMOD/*
+!/Seven Deadly Apps/[Aa]ssets/Editor Default Resources/FMOD/*
+
+# Ignore the Cache folder since it is updated locally.
+/Seven Deadly Apps/[Aa]ssets/Plugins/FMOD/Cache/*
+
+# Ignore bank files in the StreamingAssets folder.
+/Seven Deadly Apps/[Aa]ssets/StreamingAssets/**/*.bank
+/Seven Deadly Apps/[Aa]ssets/StreamingAssets/**/*.bank.meta
+
+# If the source bank files are kept outside of the StreamingAssets folder then these can be ignored.
+# Log files can be ignored.
+/Seven Deadly Apps/fmod_editor.log
