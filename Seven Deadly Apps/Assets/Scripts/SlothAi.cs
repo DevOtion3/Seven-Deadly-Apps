@@ -17,6 +17,8 @@ public class SlothAI : Damageable
     {
         base.Awake();
         anim = GetComponent<Animator>();
+        FMODUnity.RuntimeManager.CoreSystem.mixerSuspend();
+        FMODUnity.RuntimeManager.CoreSystem.mixerResume();
     }
 
     private void Update()
